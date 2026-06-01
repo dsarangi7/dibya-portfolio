@@ -9,3 +9,4 @@
 - Updated `TASKS.md` to mark Phase 1 complete.
 - Added responsive Tailwind styling and background theme in `app/globals.css`.
 - Created `PROJECT_BRIEF.md`, `SECURITY_RULES.md`, `CV_MASTER.md`, and `CAREER_TIMELINE.md`.
+ - Reorganized portfolio documentation: moved knowledge files into `/docs/references`, created `/docs` subfolders, and removed obsolete `CLAUDE.md` to avoid duplication. AGENTS.md remains the primary instruction source.
