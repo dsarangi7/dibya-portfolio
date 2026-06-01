@@ -32,28 +32,28 @@ export const profileSummary = {
 
 export const featuredProjects: ProjectCard[] = [
   {
+    title: "Battery Analytics & Intelligent Diagnostics",
+    subtitle: "Telemetry-driven battery diagnostics",
+    summary:
+      "Designed a battery analytics workflow that turns marine telemetry into high-confidence diagnostics, helping teams detect anomalies and act with engineering-grade confidence.",
+    tags: ["Battery Analytics", "Diagnostics", "Engineering"],
+    link: "/projects/battery-analytics",
+  },
+  {
     title: "AI Engineering Assistant",
     subtitle: "Sanitized knowledge retrieval for engineering decisions",
     summary:
       "Built a local RAG assistant that lets engineers query technical documentation and runbooks without exposing private data. Emphasis on secure architecture, retrieval quality, and practical integrations that accelerate troubleshooting and onboarding.",
     tags: ["RAG", "Architecture", "Engineering AI"],
-    link: "#ai-assistant",
+    link: "/projects/ai-engineering-assistant",
   },
   {
-    title: "BOM / ECN Workflow Workspace",
-    subtitle: "Productized engineering process and governance",
+    title: "Multimodal Spectroscopic Systems",
+    subtitle: "Optics-driven diagnostic instrumentation",
     summary:
-      "Designed a lightweight, role-aware workspace for BOM ingestion and ECN control that reduces manual errors and clarifies decision ownership. Focused on auditability, safe public descriptions, and smooth handoff between engineering and operations.",
-    tags: ["Workflow", "Governance", "Product"],
-    link: "#bom-ecn",
-  },
-  {
-    title: "Battery Anomaly Dashboard",
-    subtitle: "Telemetry-first diagnostics and storytelling",
-    summary:
-      "Built an analytics-first dashboard concept that surfaces cell-level anomalies, contextualizes them with operational telemetry, and guides engineering investigations with reproducible analysis steps.",
-    tags: ["Analytics", "Diagnostics", "Visualization"],
-    link: "#battery-dashboard",
+      "Developed a multimodal optical system for combining spectroscopy and signal analysis in applied diagnostics, with a focus on measurement fidelity and experimental workflow.",
+    tags: ["Optics", "Instrumentation", "Research"],
+    link: "/projects/multimodal-spectroscopic-systems",
   },
 ];
 

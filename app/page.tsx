@@ -3,6 +3,12 @@ import { ProfileSummary } from "@/app/components/profile-summary";
 import { ProjectsGrid } from "@/app/components/projects-grid";
 import { SkillsSection } from "@/app/components/skills-section";
 
+export const metadata = {
+  title: "Dibya Jyoti Sarangi | R&D Engineer Portfolio",
+  description:
+    "Cinematic portfolio for an R&D engineer specializing in marine battery analytics, AI-enabled workflows, and applied optics research.",
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">

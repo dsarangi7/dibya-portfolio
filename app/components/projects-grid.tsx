@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { featuredProjects } from "@/app/lib/portfolio";
 import { motion } from "framer-motion";
 
@@ -24,12 +25,12 @@ export function ProjectsGrid() {
 
         <div className="grid gap-6 lg:grid-cols-3">
           {featuredProjects.map((project) => (
-            <motion.article
-              key={project.title}
-              whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 280, damping: 22 }}
-              className="group rounded-[2rem] border border-white/10 bg-slate-950/55 p-6 shadow-xl shadow-slate-950/20 transition hover:-translate-y-1 hover:bg-slate-900/70"
-            >
+            <Link key={project.title} href={project.link} className="group">
+              <motion.article
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 280, damping: 22 }}
+                className="rounded-[2rem] border border-white/10 bg-slate-950/55 p-6 shadow-xl shadow-slate-950/20 transition hover:-translate-y-1 hover:bg-slate-900/70"
+              >
               <div className="mb-5 flex items-center justify-between gap-3">
                 <div>
                   <p className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300/90">
@@ -55,6 +56,7 @@ export function ProjectsGrid() {
                 ))}
               </div>
             </motion.article>
+            </Link>
           ))}
         </div>
       </div>
