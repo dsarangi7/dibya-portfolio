@@ -1,8 +1,16 @@
+"use client";
+
 import { featuredProjects } from "@/app/lib/portfolio";
+import { motion } from "framer-motion";
 
 export function ProjectsGrid() {
   return (
-    <section id="projects" className="px-6 pb-16 sm:px-10 lg:px-16">
+    <motion.section id="projects" className="px-6 pb-16 sm:px-10 lg:px-16"
+      initial={{ opacity: 0, y: 8 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 flex flex-col gap-3">
           <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Featured projects</p>
@@ -16,8 +24,10 @@ export function ProjectsGrid() {
 
         <div className="grid gap-6 lg:grid-cols-3">
           {featuredProjects.map((project) => (
-            <article
+            <motion.article
               key={project.title}
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 280, damping: 22 }}
               className="group rounded-[2rem] border border-white/10 bg-slate-950/55 p-6 shadow-xl shadow-slate-950/20 transition hover:-translate-y-1 hover:bg-slate-900/70"
             >
               <div className="mb-5 flex items-center justify-between gap-3">
@@ -44,10 +54,10 @@ export function ProjectsGrid() {
                   </span>
                 ))}
               </div>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

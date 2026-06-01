@@ -1,10 +1,18 @@
+"use client";
+
 import { profileSummary } from "@/app/lib/portfolio";
+import { motion } from "framer-motion";
 
 export function ProfileSummary() {
   return (
-    <section className="px-6 pb-16 sm:px-10 lg:px-16">
+    <motion.section className="px-6 pb-16 sm:px-10 lg:px-16"
+      initial={{ opacity: 0, y: 8 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.55 }}
+    >
       <div className="mx-auto max-w-6xl">
-        <div className="rounded-[2rem] border border-white/10 bg-slate-950/60 p-8 shadow-xl shadow-slate-950/20 backdrop-blur-xl ring-1 ring-white/5">
+          <div className="rounded-[2rem] border border-white/10 bg-slate-950/60 p-8 shadow-xl shadow-slate-950/20 backdrop-blur-xl ring-1 ring-white/5">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">{profileSummary.title}</p>
@@ -29,6 +37,6 @@ export function ProfileSummary() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

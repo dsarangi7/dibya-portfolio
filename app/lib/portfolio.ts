@@ -8,61 +8,61 @@ export type ProjectCard = {
 
 export const heroCopy = {
   name: "Dibya Jyoti Sarangi",
-  role: "R&D Engineer, Marine Battery Systems & AI-Enabled Engineering Workflows",
+  role: "R&D Engineer — Applied Physics, Marine Batteries & Engineering AI",
   headline:
-    "Building premium engineering systems that bridge marine battery analytics, local AI tools, and product-driven research.",
+    "From physics-driven optics research to marine battery R&D and AI-enabled engineering workflows — I build reliable systems that turn telemetry into confident engineering decisions.",
   highlights: [
-    "Marine battery R&D",
-    "AI-enabled workflow systems",
-    "Data analytics for engineering decisions",
+    "Physics-first engineering",
+    "Research → applied systems",
+    "Trusted AI for engineering teams",
   ],
 };
 
 export const profileSummary = {
-  title: "Profile",
+  title: "Narrative",
   description:
-    "Physics-trained engineer working at the intersection of battery systems, data analytics, and engineering software. I design AI-enabled systems that make complex industrial workflows more reliable, visible, and repeatable.",
+    "I started in physics and optics research, moved into marine battery validation, and now build AI-enabled engineering systems that help teams make fast, dependable decisions. My work connects rigorous measurement, sanitized data storytelling, and practical tooling for real product teams.",
   bullets: [
-    "Marine battery R&D and system validation",
-    "Battery analytics with MATLAB, Python, and data visualization",
-    "Local LLM/RAG tools for engineering knowledge workflows",
-    "BOM/ECN process automation and product-focused tooling",
+    "Physics and optics research informing real-world engineering",
+    "Marine battery analytics, validation, and anomaly detection",
+    "Designing local LLM / RAG workflows for engineering knowledge",
+    "Product-oriented tooling for high-integrity engineering processes",
   ],
 };
 
 export const featuredProjects: ProjectCard[] = [
   {
     title: "AI Engineering Assistant",
-    subtitle: "Offline knowledge retrieval for engineering teams",
+    subtitle: "Sanitized knowledge retrieval for engineering decisions",
     summary:
-      "Designed a local RAG-based assistant for internal workflows, enabling secure access to engineering knowledge without exposing private documents. Focused on architecture, retrieval, and practical product-fit for engineering teams.",
-    tags: ["RAG", "Python", "Local LLM", "Engineering AI"],
+      "Built a local RAG assistant that lets engineers query technical documentation and runbooks without exposing private data. Emphasis on secure architecture, retrieval quality, and practical integrations that accelerate troubleshooting and onboarding.",
+    tags: ["RAG", "Architecture", "Engineering AI"],
     link: "#ai-assistant",
   },
   {
     title: "BOM / ECN Workflow Workspace",
-    subtitle: "Sanitized engineering process platform",
+    subtitle: "Productized engineering process and governance",
     summary:
-      "Built a workflow tool for BOM ingestion, ECN review, and lifecycle control. The system is centered on product-thinking, role-based reviews, and high-integrity item master management.",
-    tags: ["Next.js", "Workflow", "BOM", "ECN"],
+      "Designed a lightweight, role-aware workspace for BOM ingestion and ECN control that reduces manual errors and clarifies decision ownership. Focused on auditability, safe public descriptions, and smooth handoff between engineering and operations.",
+    tags: ["Workflow", "Governance", "Product"],
     link: "#bom-ecn",
   },
   {
     title: "Battery Anomaly Dashboard",
-    subtitle: "Data-driven battery health visualization",
+    subtitle: "Telemetry-first diagnostics and storytelling",
     summary:
-      "Created an interactive dashboard concept for detecting cell voltage anomalies and translating analytics into actionable insights for battery teams.",
-    tags: ["MATLAB", "Python", "Analytics", "Dashboard"],
+      "Built an analytics-first dashboard concept that surfaces cell-level anomalies, contextualizes them with operational telemetry, and guides engineering investigations with reproducible analysis steps.",
+    tags: ["Analytics", "Diagnostics", "Visualization"],
     link: "#battery-dashboard",
   },
 ];
 
 export const skills = [
-  "Marine battery systems",
-  "Battery analytics & anomaly detection",
-  "Local LLM / RAG workflows",
-  "Engineering dashboard design",
-  "Product-oriented tooling",
-  "Python & MATLAB",
-  "Next.js & Tailwind CSS",
+  "Physics-driven problem solving",
+  "Optics and experimental methods",
+  "Marine battery analytics & validation",
+  "RAG & local LLM engineering workflows",
+  "Engineering dashboards & data storytelling",
+  "Product-focused software design",
+  "Python, MATLAB, Next.js",
 ];
