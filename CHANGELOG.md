@@ -8,3 +8,4 @@
 - Updated root `app/layout.tsx` metadata and dark theme styling.
 - Updated `TASKS.md` to mark Phase 1 complete.
 - Added responsive Tailwind styling and background theme in `app/globals.css`.
+- Created `PROJECT_BRIEF.md`, `SECURITY_RULES.md`, `CV_MASTER.md`, and `CAREER_TIMELINE.md`.
