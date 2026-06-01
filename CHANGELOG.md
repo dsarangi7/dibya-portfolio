@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-01 (Project skills)
+- Added project-local Codex skills for cinematic portfolio design, engineering visual assets, recruiter storytelling, and confidentiality checks.
+- Updated `AGENTS.md` to identify the primary instruction file, portfolio knowledge location, reusable skills location, and skill usage expectations for future agents.
+- Updated `TASKS.md` to track project skill setup as completed maintenance work.
+
 ## 2026-06-01
 - Implemented Phase 1 homepage for Dibya Jyoti Sarangi portfolio.
 - Added scalable component structure under `app/components`.

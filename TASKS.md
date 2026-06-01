@@ -34,3 +34,5 @@
 - [x] Reorganize portfolio knowledge files into `docs/references` (moved: `CAREER_TIMELINE.md`, `CV_MASTER.md`, `DESIGN_SYSTEM.md`, `DIBYA_PROFILE.md`, `PROJECTS.md`, `PROJECT_BRIEF.md`, `SECURITY_RULES.md`)
 - [x] Remove obsolete `CLAUDE.md`
 - [x] Create `docs` subfolders: `assets`, `screenshots`, `diagrams`, `references`, `inspiration`
+- [x] Create project-local Codex skills for cinematic design, visual assets, recruiter storytelling, and confidentiality checks
+- [x] Update `AGENTS.md` with project knowledge and skill usage guidance
