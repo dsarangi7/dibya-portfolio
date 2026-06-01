@@ -1,6 +1,7 @@
 import { HeroSection } from "@/app/components/hero-section";
 import { ProfileSummary } from "@/app/components/profile-summary";
 import { JourneySection } from "@/app/components/journey-section";
+import { ResearchSection } from "@/app/components/research-section";
 import { ProjectsGrid } from "@/app/components/projects-grid";
 import { SkillsSection } from "@/app/components/skills-section";
 
@@ -19,6 +20,7 @@ export default function Home() {
           <HeroSection />
           <ProfileSummary />
           <JourneySection />
+          <ResearchSection />
           <ProjectsGrid />
           <SkillsSection />
         </div>

@@ -5,7 +5,7 @@
 **Location:** Zhuhai, China / Odisha, India
 **Email:** [dsarangi7@gmail.com](mailto:dsarangi7@gmail.com)
 **Phone:** +91 8280303305
-**LinkedIn:** [Insert LinkedIn URL]
+**LinkedIn:** [https://www.linkedin.com/in/dibya-jyoti-sarangi37](https://www.linkedin.com/in/dibya-jyoti-sarangi37)
 **Portfolio:** [Insert Portfolio URL]
 
 ---

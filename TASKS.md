@@ -25,6 +25,7 @@
 - [x] Add reusable project detail layout
 - [x] Add SEO metadata for homepage and project pages
 - [x] Add milestone journey section with animated timeline
+- [x] Add Research & Publications section with cinematic impact cards
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel
