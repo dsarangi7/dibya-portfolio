@@ -1,5 +1,6 @@
 import { HeroSection } from "@/app/components/hero-section";
 import { ProfileSummary } from "@/app/components/profile-summary";
+import { JourneySection } from "@/app/components/journey-section";
 import { ProjectsGrid } from "@/app/components/projects-grid";
 import { SkillsSection } from "@/app/components/skills-section";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <div className="relative">
           <HeroSection />
           <ProfileSummary />
+          <JourneySection />
           <ProjectsGrid />
           <SkillsSection />
         </div>

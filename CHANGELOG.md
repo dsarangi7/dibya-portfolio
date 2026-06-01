@@ -29,4 +29,5 @@
 ## 2026-06-01 (Phase 3)
 - Added reusable `ProjectDetailLayout` component and consistent project page structure.
 - Added SEO metadata for the homepage and all project pages.
+- Added a Journey section with animated timeline milestones, icons, and responsive design.
 - Continued Phase 3 work with recruiter-focused project storytelling and confidential-safe case studies.

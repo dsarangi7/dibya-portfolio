@@ -24,6 +24,7 @@
 - [x] Add navigation from homepage project cards to detail pages
 - [x] Add reusable project detail layout
 - [x] Add SEO metadata for homepage and project pages
+- [x] Add milestone journey section with animated timeline
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel
