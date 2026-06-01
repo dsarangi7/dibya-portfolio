@@ -31,5 +31,7 @@
 - Added SEO metadata for the homepage and all project pages.
 - Added a Journey section with animated timeline milestones, icons, and responsive design.
 - Added a Research & Publications section with cinematic impact cards highlighting optics research, diagnostics, and research-to-industry transition.
+- Added a 2024 Biomedical Optics Express publication reference and public ICFO FLIGHT research link to support the career journey from photonics research to engineering R&D.
+- Added an additional external ScienceDirect citation for human thyroid diffuse optical characterization research.
 - Updated `docs/references/CV_MASTER.md` with the public LinkedIn profile URL for contact references.
 - Continued Phase 3 work with recruiter-focused project storytelling and confidential-safe case studies.

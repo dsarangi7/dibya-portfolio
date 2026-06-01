@@ -105,6 +105,54 @@ export default function MultimodalSpectroscopicSystemsPage() {
         </article>
 
         <article className="rounded-[2rem] border border-white/10 bg-slate-950/70 p-8 shadow-xl shadow-slate-950/20 backdrop-blur-xl ring-1 ring-white/5">
+          <h2 className="text-2xl font-semibold text-white">Research Links</h2>
+          <div className="mt-5 space-y-4 text-slate-300">
+            <div className="rounded-3xl bg-slate-900/70 p-5 ring-1 ring-white/5">
+              <p className="text-sm font-semibold text-white">Published research</p>
+              <p className="mt-2 text-sm text-slate-300">
+                Near-infrared diffuse optical characterization of human thyroid using ultrasound-guided hybrid time-domain and diffuse correlation spectroscopies.
+              </p>
+              <a
+                href="https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-12-7035"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
+              >
+                View the publication
+              </a>
+            </div>
+            <div className="rounded-3xl bg-slate-900/70 p-5 ring-1 ring-white/5">
+              <p className="text-sm font-semibold text-white">Public research profile</p>
+              <p className="mt-2 text-sm text-slate-300">
+                Public ICFO FLIGHT research feature highlighting the photonics research profile and credibility.
+              </p>
+              <a
+                href="https://www.linkedin.com/posts/flightphd-flightphd-industrial-ugcPost-7224029255603507200-30Km/"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
+              >
+                View public feature
+              </a>
+            </div>
+            <div className="rounded-3xl bg-slate-900/70 p-5 ring-1 ring-white/5">
+              <p className="text-sm font-semibold text-white">External citation</p>
+              <p className="mt-2 text-sm text-slate-300">
+                Human thyroid diffuse optical characterization research with hybrid time-domain and diffuse correlation spectroscopy.
+              </p>
+              <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S2468451123000417"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
+              >
+                View external citation
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article className="rounded-[2rem] border border-white/10 bg-slate-950/70 p-8 shadow-xl shadow-slate-950/20 backdrop-blur-xl ring-1 ring-white/5">
           <h2 className="text-2xl font-semibold text-white">Lessons Learned</h2>
           <ul className="mt-4 space-y-4 text-slate-300">
             <li className="flex gap-3">

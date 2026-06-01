@@ -258,6 +258,35 @@ Graduated with 71.5%
 **Journal:** Current Opinion in Biomedical Engineering (Elsevier)
 **Year:** 2023
 
+---
+
+## Near-infrared diffuse optical characterization of human thyroid using ultrasound-guided hybrid time-domain and diffuse correlation spectroscopies
+
+**Journal:** Biomedical Optics Express
+**Volume/Issue/Pages:** 15(12), 7035–7055
+**Year:** 2024
+**DOI:** 10.1364/BOE.538141
+**URL:** https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-12-7035
+**Authorship:** Dibya J. Sarangi
+
+---
+
+## Near-infrared diffuse optical characterization of human thyroid using ultrasound-guided hybrid time-domain and diffuse correlation spectroscopies
+
+**Journal:** Biomedical Optics Express
+**Volume/Issue/Pages:** 15(12), 7035–7055
+**Year:** 2024
+**DOI:** 10.1364/BOE.538141
+**URL:** https://www.sciencedirect.com/science/article/abs/pii/S2468451123000417
+**Authorship:** Dibya J. Sarangi
+
+---
+
+## External References
+
+* ICFO FLIGHT public research profile: https://www.linkedin.com/posts/flightphd-flightphd-industrial-ugcPost-7224029255603507200-30Km/
+
+
 ### Summary
 
 Research focused on multimodal diagnostic systems integrating optical methodologies for accessible biomedical screening solutions.

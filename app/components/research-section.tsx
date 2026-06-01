@@ -104,6 +104,54 @@ export function ResearchSection() {
             </motion.article>
           ))}
         </div>
+
+        <div className="mt-8 rounded-[2rem] border border-white/10 bg-slate-950/60 p-6 shadow-xl shadow-slate-950/10 ring-1 ring-white/5">
+          <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Research links</p>
+          <div className="mt-5 space-y-4 text-slate-300">
+            <div className="rounded-3xl bg-slate-900/70 p-4 ring-1 ring-white/5">
+              <p className="text-sm font-medium text-white">2024 published optics research</p>
+              <p className="mt-2 text-sm text-slate-300">
+                Near-infrared diffuse optical characterization of human thyroid using ultrasound-guided hybrid time-domain and diffuse correlation spectroscopies.
+              </p>
+              <a
+                href="https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-12-7035"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
+              >
+                View publication
+              </a>
+            </div>
+            <div className="rounded-3xl bg-slate-900/70 p-4 ring-1 ring-white/5">
+              <p className="text-sm font-medium text-white">ICFO FLIGHT public research reference</p>
+              <p className="mt-2 text-sm text-slate-300">
+                Public feature highlighting the ICFO FLIGHT research profile and optics research credibility.
+              </p>
+              <a
+                href="https://www.linkedin.com/posts/flightphd-flightphd-industrial-ugcPost-7224029255603507200-30Km/"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
+              >
+                View public feature
+              </a>
+            </div>
+            <div className="rounded-3xl bg-slate-900/70 p-4 ring-1 ring-white/5">
+              <p className="text-sm font-medium text-white">External citation</p>
+              <p className="mt-2 text-sm text-slate-300">
+                Additional ScienceDirect citation for diffuse optical thyroid characterization research.
+              </p>
+              <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S2468451123000417"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
+              >
+                View external citation
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </motion.section>
   );

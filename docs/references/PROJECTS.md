@@ -32,3 +32,19 @@ Python/MATLAB/data analytics/dashboard logic.
 
 Safe portfolio angle:
 Show synthetic example visuals only.
+
+## Multimodal Spectroscopic Diagnostic Systems
+Type: Research systems / optics instrumentation
+Public description:
+Multimodal optical diagnostics combining spectroscopy, fluorescence, and diffuse optical sensing for biomedical research workflows.
+
+Tech:
+Optical instrumentation, spectroscopy, signal processing, experimental diagnostics.
+
+Safe portfolio angle:
+Present the research system architecture, instrumentation design, and high-level diagnostics experience with public publications and external credibility links.
+
+Publications & References:
+* 2024 publication in Biomedical Optics Express: "Near-infrared diffuse optical characterization of human thyroid using ultrasound-guided hybrid time-domain and diffuse correlation spectroscopies." (DOI: 10.1364/BOE.538141)
+* ScienceDirect citation: https://www.sciencedirect.com/science/article/abs/pii/S2468451123000417
+* Public ICFO FLIGHT research reference: https://www.linkedin.com/posts/flightphd-flightphd-industrial-ugcPost-7224029255603507200-30Km/
