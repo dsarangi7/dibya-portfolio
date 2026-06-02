@@ -4,6 +4,7 @@ import { JourneySection } from "@/app/components/journey-section";
 import { ResearchSection } from "@/app/components/research-section";
 import { ProjectsGrid } from "@/app/components/projects-grid";
 import { SkillsSection } from "@/app/components/skills-section";
+import { ChapterDivider, HolographicDivider } from "@/app/components/visual-system";
 
 export const metadata = {
   title: "Dibya Jyoti Sarangi | R&D Engineer Portfolio",
@@ -13,15 +14,20 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.12),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(129,140,248,0.08),_transparent_30%)] opacity-80" />
+    <main className="min-h-screen bg-[#030712] text-slate-100">
+      <div className="relative isolate overflow-hidden identity-field">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,_rgba(34,211,238,0.16),_transparent_34%),radial-gradient(circle_at_78%_8%,_rgba(99,102,241,0.14),_transparent_30%),radial-gradient(circle_at_82%_70%,_rgba(248,211,107,0.08),_transparent_24%)] opacity-90" />
         <div className="relative">
           <HeroSection />
+          <HolographicDivider />
           <ProfileSummary />
+          <ChapterDivider index="01" label="Trajectory" />
           <JourneySection />
+          <ChapterDivider index="02" label="Research Signal" />
           <ResearchSection />
+          <ChapterDivider index="03" label="Applied Systems" />
           <ProjectsGrid />
+          <ChapterDivider index="04" label="Capability Stack" />
           <SkillsSection />
         </div>
       </div>

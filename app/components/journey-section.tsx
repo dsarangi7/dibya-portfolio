@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { AiSystemsIcon, BatterySystemsIcon, OpticsIcon, PhysicsIcon, ResearchIcon } from "@/app/components/visual-system";
 
 const journeyMilestones = [
   {
@@ -9,15 +10,7 @@ const journeyMilestones = [
     subtitle: "Ravenshaw University",
     description:
       "Built analytical rigor through physics coursework and lab-based problem solving, forming the foundation for research-led engineering.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="3" />
-        <path d="M19.4 15a9 9 0 0 0 0-6" />
-        <path d="M4.6 9a9 9 0 0 0 0 6" />
-        <path d="M9 4.6a9 9 0 0 0 6 0" />
-        <path d="M15 19.4a9 9 0 0 0-6 0" />
-      </svg>
-    ),
+    icon: <PhysicsIcon />,
   },
   {
     year: "2016",
@@ -25,13 +18,7 @@ const journeyMilestones = [
     subtitle: "IGIT",
     description:
       "Deepened applied optics knowledge and experimental research methods while solving measurement and instrumentation challenges.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 21h18" />
-        <path d="M5 21V11a7 7 0 0 1 14 0v10" />
-        <path d="M8 10h8" />
-      </svg>
-    ),
+    icon: <OpticsIcon />,
   },
   {
     year: "2018",
@@ -39,13 +26,7 @@ const journeyMilestones = [
     subtitle: "M.Tech in Applied Optics & Physics",
     description:
       "Focused on advanced optics research, precision instrumentation, and the science behind engineered measurement systems.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M6 4h12v5H6z" />
-        <path d="M9 14h6v6H9z" />
-        <path d="M4 9h16" />
-      </svg>
-    ),
+    icon: <OpticsIcon />,
   },
   {
     year: "2021",
@@ -53,11 +34,7 @@ const journeyMilestones = [
     subtitle: "Marie Curie FLIGHT Fellow",
     description:
       "Joined an international optics research environment, blending experimental precision with applied photonics workflows.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7l3-7z" />
-      </svg>
-    ),
+    icon: <ResearchIcon />,
   },
   {
     year: "2023",
@@ -65,13 +42,7 @@ const journeyMilestones = [
     subtitle: "AYK Energy",
     description:
       "Applied physics-driven systems thinking to marine battery analytics, anomaly detection, and product reliability engineering.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="7" y="3" width="10" height="18" rx="2" />
-        <path d="M11 7h2" />
-        <path d="M12 12l-1.5 2.5h3L12 12z" />
-      </svg>
-    ),
+    icon: <BatterySystemsIcon />,
   },
   {
     year: "2025",
@@ -79,16 +50,7 @@ const journeyMilestones = [
     subtitle: "Engineering-AI workflows",
     description:
       "Built local AI-enabled knowledge workflows and secure engineering tooling that connect data, models, and product decision-making.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 7h16" />
-        <path d="M4 17h16" />
-        <path d="M7 4v4" />
-        <path d="M17 4v4" />
-        <path d="M7 20v-4" />
-        <path d="M17 20v-4" />
-      </svg>
-    ),
+    icon: <AiSystemsIcon />,
   },
   {
     year: "2026+",
@@ -96,11 +58,7 @@ const journeyMilestones = [
     subtitle: "Physics + AI for engineering products",
     description:
       "Continuing toward intelligent systems that combine scientific rigor, reliable field data, and engineering-grade AI workflows.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2l4 7h7l-5.5 4.5L19 21l-7-4-7 4 1.5-7.5L1 9h7l4-7z" />
-      </svg>
-    ),
+    icon: <AiSystemsIcon />,
   },
 ];
 
@@ -125,7 +83,7 @@ export function JourneySection() {
           </p>
         </div>
 
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/60 p-8 shadow-xl shadow-slate-950/20 backdrop-blur-xl ring-1 ring-white/5 sm:p-10">
+        <div className="visual-card relative overflow-hidden rounded-[2rem] p-8 sm:p-10">
           <div className="pointer-events-none absolute left-12 top-12 bottom-12 hidden w-px bg-cyan-400/20 sm:block" />
 
           <div className="space-y-8 sm:space-y-10">
@@ -140,12 +98,12 @@ export function JourneySection() {
               >
                 <div className="relative">
                   <div className="absolute left-0 top-3 h-full w-0.5 bg-cyan-400/20 sm:top-6 sm:left-5" />
-                  <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-3xl bg-cyan-500/10 text-cyan-300 ring-1 ring-cyan-500/20 sm:h-16 sm:w-16">
+                  <div className="relative z-10">
                     {milestone.icon}
                   </div>
                 </div>
 
-                <div className="flex-1 rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-5 ring-1 ring-white/5 sm:p-6">
+                <div className="hologram-panel flex-1 rounded-[1.75rem] p-5 sm:p-6">
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <p className="text-xs uppercase tracking-[0.24em] text-cyan-300/80">

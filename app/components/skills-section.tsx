@@ -2,6 +2,15 @@
 
 import { skills } from "@/app/lib/portfolio";
 import { motion } from "framer-motion";
+import { AiSystemsIcon, BatterySystemsIcon, OpticsIcon, PhysicsIcon, ResearchIcon } from "@/app/components/visual-system";
+
+const skillIcons = [
+  <PhysicsIcon key="physics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <OpticsIcon key="optics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <BatterySystemsIcon key="battery" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <AiSystemsIcon key="ai" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <ResearchIcon key="research" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+];
 
 export function SkillsSection() {
   return (
@@ -12,7 +21,7 @@ export function SkillsSection() {
       transition={{ duration: 0.55 }}
     >
       <div className="mx-auto max-w-6xl">
-        <div className="rounded-[2rem] border border-white/10 bg-slate-950/55 p-8 shadow-xl shadow-slate-950/20 backdrop-blur-xl ring-1 ring-white/5">
+        <div className="visual-card rounded-[2rem] p-8">
           <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Skills</p>
@@ -26,8 +35,9 @@ export function SkillsSection() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            {skills.map((skill) => (
-              <motion.div key={skill} whileHover={{ scale: 1.02 }} className="rounded-3xl border border-white/10 bg-slate-900/70 p-5 text-slate-100 transition hover:border-cyan-400/20 hover:bg-slate-900/90">
+            {skills.map((skill, index) => (
+              <motion.div key={skill} whileHover={{ scale: 1.02 }} className="hologram-panel flex items-center gap-4 rounded-3xl p-5 text-slate-100 transition hover:border-cyan-400/30">
+                {skillIcons[index % skillIcons.length]}
                 <p className="text-base font-medium">{skill}</p>
               </motion.div>
             ))}

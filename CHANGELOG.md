@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-01 (Visual identity)
+- Added a project-specific DJS monogram and reusable SVG visual system for physics, optics, research, battery systems, and AI systems.
+- Added branded chapter dividers, holographic panel treatments, and section transition styling across the homepage.
+- Unified homepage visual branding across Hero, Profile Summary, Journey, Research, Projects, and Skills without changing portfolio content or project pages.
+
 ## 2026-06-01 (Project skills)
 - Added project-local Codex skills for cinematic portfolio design, engineering visual assets, recruiter storytelling, and confidentiality checks.
 - Updated `AGENTS.md` to identify the primary instruction file, portfolio knowledge location, reusable skills location, and skill usage expectations for future agents.

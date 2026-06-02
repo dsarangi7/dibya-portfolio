@@ -26,6 +26,9 @@
 - [x] Add SEO metadata for homepage and project pages
 - [x] Add milestone journey section with animated timeline
 - [x] Add Research & Publications section with cinematic impact cards
+- [x] Add DJS monogram and reusable engineering SVG icon system
+- [x] Add cinematic chapter dividers and homepage section transition language
+- [x] Align homepage visual branding across Hero, Journey, Research, Projects, and Skills
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel

@@ -3,6 +3,19 @@
 import Link from "next/link";
 import { featuredProjects } from "@/app/lib/portfolio";
 import { motion } from "framer-motion";
+import { AiSystemsIcon, BatterySystemsIcon, OpticsIcon } from "@/app/components/visual-system";
+
+function ProjectGlyph({ title }: { title: string }) {
+  if (title.includes("Battery")) {
+    return <BatterySystemsIcon />;
+  }
+
+  if (title.includes("AI")) {
+    return <AiSystemsIcon />;
+  }
+
+  return <OpticsIcon />;
+}
 
 export function ProjectsGrid() {
   return (
@@ -29,7 +42,7 @@ export function ProjectsGrid() {
               <motion.article
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 280, damping: 22 }}
-                className="rounded-[2rem] border border-white/10 bg-slate-950/55 p-6 shadow-xl shadow-slate-950/20 transition hover:-translate-y-1 hover:bg-slate-900/70"
+                className="project-card visual-card relative overflow-hidden rounded-[2rem] p-6 transition hover:-translate-y-1"
               >
               <div className="mb-5 flex items-center justify-between gap-3">
                 <div>
@@ -38,9 +51,7 @@ export function ProjectsGrid() {
                   </p>
                   <h3 className="mt-3 text-xl font-semibold text-white">{project.title}</h3>
                 </div>
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-cyan-500/10 text-cyan-300 ring-1 ring-cyan-500/15">
-                  ↗
-                </div>
+                <ProjectGlyph title={project.title} />
               </div>
 
               <p className="text-sm leading-7 text-slate-300">{project.summary}</p>
@@ -54,6 +65,9 @@ export function ProjectsGrid() {
                     {tag}
                   </span>
                 ))}
+              </div>
+              <div className="mt-6 flex justify-end border-t border-cyan-200/10 pt-4 text-cyan-200/80">
+                <span aria-hidden="true">↗</span>
               </div>
             </motion.article>
             </Link>
