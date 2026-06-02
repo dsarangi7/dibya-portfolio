@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-02 (Hero redesign)
+- Rebuilt the homepage hero as a full-screen immersive section with a lightweight React Three Fiber battery intelligence core scene, orbital geometry, telemetry holograms, particles, and technical depth layers.
+- Added mouse and scroll parallax for cinematic motion while preserving the existing hero copy and visual identity.
+- Added a WebGL fallback path for reduced-motion and non-WebGL devices.
+- Installed `@react-three/fiber`, `@react-three/drei`, and `three` for the homepage hero scene.
+
 ## 2026-06-01 (Visual identity)
 - Added a project-specific DJS monogram and reusable SVG visual system for physics, optics, research, battery systems, and AI systems.
 - Added branded chapter dividers, holographic panel treatments, and section transition styling across the homepage.

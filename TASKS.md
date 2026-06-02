@@ -29,6 +29,7 @@
 - [x] Add DJS monogram and reusable engineering SVG icon system
 - [x] Add cinematic chapter dividers and homepage section transition language
 - [x] Align homepage visual branding across Hero, Journey, Research, Projects, and Skills
+- [x] Rebuild homepage hero with lightweight React Three Fiber scene and WebGL fallback
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel
