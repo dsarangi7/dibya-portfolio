@@ -1,17 +1,28 @@
 import ProjectDetailLayout from "@/app/components/project-detail-layout";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Multimodal Spectroscopic Systems | Dibya Jyoti Sarangi",
   description:
-    "Detailed case page for multimodal spectroscopic systems, covering optical instrumentation, signal fusion, and experimental diagnostics.",
+    "Research foundation case page covering optical instrumentation, signal fusion, and experimental diagnostics that strengthened later battery analytics work.",
+  alternates: {
+    canonical: "/projects/multimodal-spectroscopic-systems",
+  },
+  openGraph: {
+    type: "article",
+    url: "/projects/multimodal-spectroscopic-systems",
+    title: "Multimodal Spectroscopic Systems | Dibya Jyoti Sarangi",
+    description:
+      "Research foundation case page covering optical instrumentation, signal fusion, and experimental diagnostics in a public-safe summary.",
+  },
 };
 
 export default function MultimodalSpectroscopicSystemsPage() {
   return (
     <ProjectDetailLayout
       title="Multimodal Spectroscopic Systems"
-      category="Research Systems"
-      description="A research-oriented exploration of optical instrumentation and multimodal signal analysis for diagnostic workflows."
+      category="Research Foundation"
+      description="A research foundation in optical instrumentation and multimodal signal analysis that strengthened later battery diagnostics, measurement rigor, and engineering analytics."
       note="Sanitized public-safe summary: no confidential work details are included."
     >
       <div className="space-y-8">
@@ -116,6 +127,7 @@ export default function MultimodalSpectroscopicSystemsPage() {
                 href="https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-12-7035"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open the published optics research"
                 className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
               >
                 View the publication
@@ -130,6 +142,7 @@ export default function MultimodalSpectroscopicSystemsPage() {
                 href="https://www.linkedin.com/posts/flightphd-flightphd-industrial-ugcPost-7224029255603507200-30Km/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open the public ICFO FLIGHT research feature"
                 className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
               >
                 View public feature
@@ -144,6 +157,7 @@ export default function MultimodalSpectroscopicSystemsPage() {
                 href="https://www.sciencedirect.com/science/article/abs/pii/S2468451123000417"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open the external ScienceDirect citation"
                 className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
               >
                 View external citation

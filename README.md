@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dibya Jyoti Sarangi Portfolio
+
+A premium recruiter-facing engineering portfolio for Dibya Jyoti Sarangi. The site presents Dibya as a Battery R&D Engineer / Marine Battery Engineer building marine battery analytics, telemetry diagnostics, AI-enabled engineering workflows, and product-minded systems on a physics and research foundation.
+
+The portfolio is intentionally sanitized. It does not include confidential AYK data, proprietary source code, private documents, customer information, credentials, or internal screenshots.
+
+## Tech Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- CSS/SVG visual system for the current hero illustration
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the local URL shown in the terminal. Next.js will use `http://localhost:3000` by default, or the next available port if `3000` is already in use.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Useful Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/page.tsx` - homepage route and section order
+- `app/components` - reusable portfolio sections and visual components
+- `app/projects` - sanitized project case pages
+- `docs/references` - portfolio knowledge base and source context
+- `public/msca-interview.mp4` - public ICFO/MSCA interview video asset
+- `public/IITD gold medal.MP4` - public IIT Delhi achievement video asset
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content Safety
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Before publishing or deploying, review changes for:
 
-## Deploy on Vercel
+- Confidential company data
+- Proprietary source code
+- Customer or vessel identifiers
+- Credentials, private URLs, file paths, or internal documents
+- Non-public performance values or test data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Use sanitized summaries and public research references only.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+The project is ready for static-friendly Next.js deployment on Vercel or another Node-compatible host.
+
+Set `NEXT_PUBLIC_SITE_URL` in the deployment environment if you want Open Graph metadata to resolve to the production domain. If it is not set, metadata falls back to `http://localhost:3000` during local builds.

@@ -12,9 +12,9 @@
 
 # Professional Summary
 
-R&D Engineer with a multidisciplinary background spanning battery analytics, applied physics, artificial intelligence, data science, and industrial engineering systems. Experienced in developing analytical frameworks, telemetry-driven diagnostics, anomaly detection systems, equivalent circuit models, and AI-powered engineering tools for lithium-ion marine battery systems.
+Battery R&D Engineer / Marine Battery Engineer with a multidisciplinary background spanning marine lithium-ion battery systems, battery analytics, applied physics, artificial intelligence, data science, and industrial engineering software. Experienced in developing analytical frameworks, telemetry-driven diagnostics, anomaly detection systems, parameter estimation workflows, battery health monitoring concepts, and AI-powered engineering tools for lithium-ion marine battery systems.
 
-Combines research-grade analytical rigor developed through international scientific research with hands-on industrial engineering execution. Skilled in translating complex engineering challenges into scalable software, data, and AI-driven solutions. Passionate about the convergence of Battery Technology, Physics, Artificial Intelligence, Data Analytics, and Intelligent Engineering Systems.
+Combines hands-on battery engineering execution with research-grade analytical rigor developed through applied physics, optics, and biomedical photonics research. Skilled in translating complex battery and engineering workflow challenges into public-safe software, data, and AI-driven systems.
 
 ---
 
@@ -86,7 +86,7 @@ Combines research-grade analytical rigor developed through international scienti
 
 ### AYK Energy, Zhuhai, China
 
-**2025 – Present**
+**January 2025 – Present**
 
 #### Responsibilities
 
@@ -186,11 +186,13 @@ Optics, Spectroscopy, Biomedical Instrumentation, Signal Processing
 
 # Education
 
-## PhD in Photonics (Marie Skłodowska-Curie FLIGHT Fellow)
+## PhD Research / Marie Skłodowska-Curie FLIGHT Fellow
 
 ### Institute of Photonic Sciences (ICFO), Barcelona, Spain
 
 **2023 – 2025**
+
+**Status:** PhD research period / former Marie Skłodowska-Curie FLIGHT Fellow. Do not present as a completed PhD.
 
 #### Research Focus
 

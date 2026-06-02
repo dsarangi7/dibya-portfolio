@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-06-02 (Positioning and chronology correction)
+- Repositioned portfolio around current battery engineering identity and corrected career chronology.
+- Updated homepage copy, project summaries, skills language, SEO metadata, README, and reference docs so Dibya is presented first as a Battery R&D Engineer / Marine Battery Engineer.
+- Corrected the timeline to show B.Sc. Physics (2013-2016), M.Sc. Applied Physics (2016-2018), M.Tech Applied Optics & Physics at IIT Delhi (2021-2023), ICFO PhD Research / FLIGHT Fellow period (2023-2025), and AYK Energy R&D Engineer from January 2025-present.
+- Clarified that the ICFO period was PhD research / former Marie Sklodowska-Curie FLIGHT Fellowship experience, not a completed PhD.
+
+## 2026-06-02 (IIT Delhi achievement spotlight)
+- Added a modest IIT Delhi achievement video spotlight inside the Journey section near the IIT Delhi milestone.
+- Embedded `public/IITD gold medal.MP4` with controls, metadata preload, no autoplay, a cinematic glass frame, contextual copy, and the requested caption.
+- Kept the award treatment smaller than the ICFO spotlight so the portfolio remains focused on technical work.
+
+## 2026-06-02 (Deployment polish)
+- Added deployment-ready SEO and Open Graph metadata for the root layout, homepage, and project pages.
+- Expanded the footer with LinkedIn, email, publication, project navigation, and section navigation links with accessible labels.
+- Added a portfolio-styled 404 page and refreshed `README.md` with project overview, local run instructions, deployment notes, and content safety guidance.
+- Added accessibility labels to major homepage, research, project, footer, video, and 404 links.
+- Verified the ICFO video asset is served from `/msca-interview.mp4`, uses controls, preloads metadata, and does not autoplay.
+- Fixed mobile hero text overflow by constraining the mobile hero columns and allowing safer text wrapping.
+
 ## 2026-06-02 (Static hero illustration)
 - Replaced the React Three Fiber hero scene with a high-quality CSS/SVG holographic battery intelligence illustration.
 - Added a reusable `HeroHologramIllustration` component with a glowing battery core, orbital rings, telemetry nodes, circuit grid, and animated particles.

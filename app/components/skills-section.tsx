@@ -5,11 +5,13 @@ import { motion } from "framer-motion";
 import { AiSystemsIcon, BatterySystemsIcon, OpticsIcon, PhysicsIcon, ResearchIcon } from "@/app/components/visual-system";
 
 const skillIcons = [
-  <PhysicsIcon key="physics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
-  <OpticsIcon key="optics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
   <BatterySystemsIcon key="battery" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <BatterySystemsIcon key="diagnostics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
   <AiSystemsIcon key="ai" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <ResearchIcon key="analytics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <OpticsIcon key="optics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
   <ResearchIcon key="research" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+  <PhysicsIcon key="physics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
 ];
 
 export function SkillsSection() {
@@ -26,11 +28,11 @@ export function SkillsSection() {
             <div>
               <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Skills</p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Capability areas that move projects forward.
+                Battery engineering capabilities backed by AI, data, and research discipline.
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-6 text-slate-400 sm:text-right">
-              A concise blend of engineering, analytics, and software execution tuned for marine and systems-focused product development.
+              A concise blend of marine battery analytics, diagnostics, engineering AI, data workflows, and scientific instrumentation experience.
             </p>
           </div>
 

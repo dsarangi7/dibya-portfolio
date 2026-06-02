@@ -7,11 +7,22 @@ import { ProjectsGrid } from "@/app/components/projects-grid";
 import { SkillsSection } from "@/app/components/skills-section";
 import { Footer } from "@/app/components/footer";
 import { ChapterDivider, HolographicDivider } from "@/app/components/visual-system";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Dibya Jyoti Sarangi | R&D Engineer Portfolio",
+export const metadata: Metadata = {
+  title: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
   description:
-    "Cinematic portfolio for an R&D engineer specializing in marine battery analytics, AI-enabled workflows, and applied optics research.",
+    "Battery-first engineering portfolio for a Marine Battery R&D Engineer specializing in battery analytics, intelligent diagnostics, AI engineering systems, and physics-trained engineering.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
+    description:
+      "Battery-first engineering portfolio for a Marine Battery R&D Engineer specializing in battery analytics, intelligent diagnostics, AI engineering systems, and physics-trained engineering.",
+  },
 };
 
 export default function Home() {

@@ -22,33 +22,33 @@ export function IcfoSpotlight() {
             <div className="max-w-3xl space-y-4">
               <div className="flex items-center gap-3">
                 <DjsMonogram className="h-10 w-10" />
-                <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">ICFO spotlight</p>
+                <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">Research foundation</p>
               </div>
               <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                ICFO FLIGHT research feature from biomedical photonics to industrial R&D.
+                ICFO FLIGHT research foundation behind today&apos;s battery engineering direction.
               </h2>
               <p className="max-w-2xl text-base leading-7 text-slate-300">
-                A polished record of the MSCA / FLIGHT research transition, showing how a Medical Photonics foundation evolved into industrial engineering work with stronger systems thinking and product focus.
+                A public MSCA / FLIGHT research feature showing how biomedical photonics, medical optics, and instrumentation experience now support battery analytics, diagnostics, and industrial R&D work.
               </p>
             </div>
             <span className="inline-flex w-fit rounded-full border border-cyan-300/15 bg-white/[0.04] px-3 py-1 text-xs uppercase tracking-[0.28em] text-slate-300 ring-1 ring-cyan-300/10">
-              Research transition
+              Research foundation
             </span>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
             <div className="space-y-4">
               <div className="hologram-panel rounded-[1.75rem] p-5">
-                <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">ICFO FLIGHT PhD Fellowship</p>
+                <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">PhD Research / FLIGHT Fellowship</p>
                 <p className="mt-3 text-sm leading-7 text-slate-300">
-                  Research experience shaped in a multidisciplinary environment focused on photonics, sensing, and real-world translation.
+                  Former Marie Sklodowska-Curie FLIGHT Fellow research experience in a multidisciplinary environment focused on photonics, sensing, and real-world translation.
                 </p>
               </div>
 
               <div className="hologram-panel rounded-[1.75rem] p-5">
                 <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Medical Photonics group</p>
                 <p className="mt-3 text-sm leading-7 text-slate-300">
-                  The spotlight connects biomedical photonics research with practical industrial R&D habits: careful measurement, disciplined analysis, and clear communication.
+                  The spotlight connects biomedical photonics research with practical battery R&D habits: careful measurement, disciplined analysis, and clear engineering communication.
                 </p>
               </div>
 
@@ -61,6 +61,7 @@ export function IcfoSpotlight() {
                   href="https://www.linkedin.com/posts/flightphd-flightphd-industrial-ugcPost-7224029255603507200-30Km/"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Open the public LinkedIn ICFO FLIGHT research feature"
                   className="mt-4 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
                 >
                   View LinkedIn feature
@@ -76,6 +77,7 @@ export function IcfoSpotlight() {
                     <video
                       className="relative block aspect-video w-full rounded-[1.5rem] object-cover"
                       src="/msca-interview.mp4"
+                      aria-label="ICFO FLIGHT PhD Fellow research feature video"
                       controls
                       preload="metadata"
                       playsInline

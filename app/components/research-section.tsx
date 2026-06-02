@@ -6,30 +6,30 @@ import { OpticsIcon, ResearchIcon } from "@/app/components/visual-system";
 const researchHighlights = [
   {
     title: "ICFO Photonics Research",
-    subtitle: "Advanced optics in experimental science",
+    subtitle: "Scientific foundation for engineering diagnostics",
     description:
-      "Led photonics research that fused instrumentation, spectroscopy, and diagnostic workflows for real-world sensing applications.",
+      "Biomedical photonics research strengthened the measurement discipline now applied to battery diagnostics, telemetry interpretation, and engineering analytics.",
     icon: <OpticsIcon />,
   },
   {
     title: "IIT Delhi Applied Optics",
     subtitle: "Precision measurement systems",
     description:
-      "Translated optics research into applied systems that emphasize measurement fidelity, instrument stability, and engineering-grade analysis.",
+      "Applied optics training shaped a rigorous approach to instrumentation, signal quality, and engineering-grade analysis for current battery R&D work.",
     icon: <OpticsIcon />,
   },
   {
     title: "Multimodal Diagnostics",
     subtitle: "Spectroscopy and biomedical sensing",
     description:
-      "Built multimodal diagnostic device concepts that combine spectroscopy, imaging, and signal processing for safer, more informative sensing.",
+      "Built diagnostic research concepts combining spectroscopy, imaging, and signal processing; this foundation informs how complex battery signals are structured and reviewed.",
     icon: <ResearchIcon />,
   },
   {
     title: "Research-to-Industry",
-    subtitle: "Engineering systems with product rigor",
+    subtitle: "Scientific foundation moving into battery systems",
     description:
-      "Moved optical instrument thinking into industrial workflows, connecting research insights to marine battery analytics and AI-enabled engineering tools.",
+      "Moved optical instrument thinking into industrial workflows, connecting research habits to marine battery analytics, validation, and AI-enabled engineering tools.",
     icon: <ResearchIcon />,
   },
 ];
@@ -46,12 +46,12 @@ export function ResearchSection() {
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 flex flex-col gap-3">
-          <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Research</p>
+          <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Scientific foundation</p>
           <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Research impact that informs product-grade engineering.
+            Research discipline that strengthens battery engineering.
           </h2>
           <p className="max-w-2xl text-base leading-7 text-slate-300">
-            Scientific instrumentation, optics, and multimodal diagnostics shaped the systems thinking behind marine battery analytics and engineering AI workflows.
+            Physics, applied optics, photonics, and biomedical instrumentation are presented here as the foundation behind today&apos;s marine battery analytics, diagnostics, and engineering AI workflows.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export function ResearchSection() {
               <div className="flex items-center justify-between gap-4">
                 {item.icon}
                 <span className="rounded-full bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.3em] text-slate-300 ring-1 ring-white/5">
-                  Impact
+                  Foundation
                 </span>
               </div>
               <div className="mt-6">
@@ -81,7 +81,7 @@ export function ResearchSection() {
         </div>
 
         <div className="visual-card mt-8 rounded-[2rem] p-6">
-          <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Research links</p>
+          <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">Public research references</p>
           <div className="mt-5 space-y-4 text-slate-300">
             <div className="hologram-panel rounded-3xl p-4">
               <p className="text-sm font-medium text-white">2024 published optics research</p>
@@ -92,6 +92,7 @@ export function ResearchSection() {
                 href="https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-12-7035"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open the 2024 published optics research"
                 className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
               >
                 View publication
@@ -100,12 +101,13 @@ export function ResearchSection() {
             <div className="hologram-panel rounded-3xl p-4">
               <p className="text-sm font-medium text-white">ICFO FLIGHT public research reference</p>
               <p className="mt-2 text-sm text-slate-300">
-                Public feature highlighting the ICFO FLIGHT research profile and optics research credibility.
+                Public feature highlighting the ICFO FLIGHT research period and optics research foundation.
               </p>
               <a
                 href="https://www.linkedin.com/posts/flightphd-flightphd-industrial-ugcPost-7224029255603507200-30Km/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open the public ICFO FLIGHT research feature"
                 className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
               >
                 View public feature
@@ -120,6 +122,7 @@ export function ResearchSection() {
                 href="https://www.sciencedirect.com/science/article/abs/pii/S2468451123000417"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open the external ScienceDirect citation"
                 className="mt-3 inline-flex text-sm font-medium text-cyan-300 hover:text-white"
               >
                 View external citation

@@ -35,6 +35,11 @@
 - [x] Add ICFO research spotlight video section between Research and Projects
 - [x] Add homepage navigation anchors, hero CTA, and footer contact section
 - [x] Replace React Three Fiber hero with lightweight CSS/SVG holographic battery intelligence illustration
+- [x] Add deployment SEO, Open Graph metadata, footer links, accessible labels, and branded 404 page
+- [x] Verify ICFO video controls, metadata preload, no autoplay, mobile responsiveness, and confidentiality safety
+- [x] Add IIT Delhi Gold Medal announcement video spotlight near the IIT Delhi journey milestone
+- [x] Reposition homepage, project copy, metadata, and reference docs around current Battery R&D Engineer / Marine Battery Engineer identity
+- [x] Correct career chronology and clarify ICFO as PhD research / former FLIGHT Fellow experience, not a completed PhD
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel

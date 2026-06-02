@@ -1,7 +1,7 @@
 # Project Brief
 
 ## Purpose
-This portfolio is designed to present Dibya Jyoti Sarangi as a premium recruiter-facing R&D engineer. It highlights expertise in marine battery systems, data-driven engineering, and AI-enabled workflow tools while maintaining a professional, science-first tone.
+This portfolio is designed to present Dibya Jyoti Sarangi as a premium recruiter-facing Battery R&D Engineer / Marine Battery Engineer. It highlights expertise in marine battery systems, telemetry diagnostics, data-driven engineering, and AI-enabled workflow tools while showing physics and research as the technical foundation.
 
 ## Audience
 - Engineering recruiters and hiring managers

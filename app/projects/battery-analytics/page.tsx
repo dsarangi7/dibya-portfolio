@@ -1,17 +1,28 @@
 import ProjectDetailLayout from "@/app/components/project-detail-layout";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Battery Analytics & Intelligent Diagnostics | Dibya Jyoti Sarangi",
   description:
-    "Detailed case page for battery analytics and intelligent diagnostics, showing how marine telemetry becomes actionable engineering insight.",
+    "Battery-first case page for marine lithium-ion battery analytics, telemetry diagnostics, anomaly detection, and engineering decision support.",
+  alternates: {
+    canonical: "/projects/battery-analytics",
+  },
+  openGraph: {
+    type: "article",
+    url: "/projects/battery-analytics",
+    title: "Battery Analytics & Intelligent Diagnostics | Dibya Jyoti Sarangi",
+    description:
+      "Sanitized case page showing marine battery telemetry analytics, intelligent diagnostics, anomaly detection, and engineering decision support.",
+  },
 };
 
 export default function BatteryAnalyticsPage() {
   return (
     <ProjectDetailLayout
       title="Battery Analytics & Intelligent Diagnostics"
-      category="Systems Engineering"
-      description="A clean, engineered approach to detecting battery anomalies and translating telemetry into confident action for marine battery systems."
+      category="Marine Battery Engineering"
+      description="A battery-first engineering approach to marine lithium-ion telemetry, anomaly detection, parameter review, and diagnostics for confident engineering action."
       note="Sanitized public-safe case study: no proprietary company data is exposed."
     >
       <div className="grid gap-6 xl:grid-cols-[1.3fr_0.9fr]">

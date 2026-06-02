@@ -1,15 +1,26 @@
 # Projects
 
+## Battery Analytics & Intelligent Diagnostics
+Type: Confidential company project
+Public description:
+Public-safe battery analytics and diagnostics workflow for marine lithium-ion systems, focused on telemetry interpretation, parameter estimation, anomaly detection, and engineering review.
+
+Tech:
+MATLAB, Python, telemetry analytics, statistical diagnostics, validation workflows.
+
+Safe portfolio angle:
+Show sanitized architecture, diagnostic thinking, and workflow value. Do not show private datasets, exact internal metrics, customer details, or proprietary company data.
+
 ## AYK AI Assistant
 Type: Confidential company project
 Public description:
-Offline RAG-based AI assistant for internal engineering documents.
+Offline RAG-based engineering workflow intelligence assistant for internal technical knowledge.
 
 Tech:
 Python, Streamlit, Ollama, FAISS/Chroma, local LLM.
 
 Safe portfolio angle:
-Show architecture, problem solved, constraints, and future roadmap. Do not show private documents or company data.
+Show sanitized architecture, retrieval constraints, engineering knowledge workflow, and future roadmap. Do not show private documents or company data.
 
 ## BOM/ECN Engineering Workspace
 Type: Confidential company project
@@ -36,7 +47,7 @@ Show synthetic example visuals only.
 ## Multimodal Spectroscopic Diagnostic Systems
 Type: Research systems / optics instrumentation
 Public description:
-Multimodal optical diagnostics combining spectroscopy, fluorescence, and diffuse optical sensing for biomedical research workflows.
+Research foundation project combining spectroscopy, fluorescence, and diffuse optical sensing for biomedical research workflows. Present as prior scientific work that strengthens current battery diagnostics and measurement thinking.
 
 Tech:
 Optical instrumentation, spectroscopy, signal processing, experimental diagnostics.

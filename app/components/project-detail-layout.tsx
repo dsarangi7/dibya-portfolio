@@ -28,6 +28,7 @@ export default function ProjectDetailLayout({
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <Link
               href="/"
+              aria-label="Back to the portfolio homepage"
               className="inline-flex w-fit items-center justify-center rounded-full border border-cyan-400/20 bg-white/5 px-5 py-3 text-sm font-medium text-cyan-100 transition hover:bg-cyan-500/10"
             >
               Back to home

@@ -38,7 +38,12 @@ export function ProjectsGrid() {
 
         <div className="grid gap-6 lg:grid-cols-3">
           {featuredProjects.map((project) => (
-            <Link key={project.title} href={project.link} className="group">
+            <Link
+              key={project.title}
+              href={project.link}
+              aria-label={`Open project case study: ${project.title}`}
+              className="group"
+            >
               <motion.article
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 280, damping: 22 }}

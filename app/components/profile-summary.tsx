@@ -2,7 +2,7 @@
 
 import { profileSummary } from "@/app/lib/portfolio";
 import { motion } from "framer-motion";
-import { AiSystemsIcon, BatterySystemsIcon, OpticsIcon, PhysicsIcon } from "@/app/components/visual-system";
+import { AiSystemsIcon, BatterySystemsIcon, OpticsIcon, ResearchIcon } from "@/app/components/visual-system";
 
 export function ProfileSummary() {
   return (
@@ -18,11 +18,11 @@ export function ProfileSummary() {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl">
               <div className="mb-5 flex items-center gap-4">
-                <PhysicsIcon />
+                <BatterySystemsIcon />
                 <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">{profileSummary.title}</p>
               </div>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Engineering systems with a strong scientific foundation.
+                Marine battery engineering with a rare scientific and AI systems foundation.
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300">
                 {profileSummary.description}
@@ -35,10 +35,11 @@ export function ProfileSummary() {
                   <li key={bullet} className="flex gap-3 text-sm leading-7">
                     <span className="mt-1 text-cyan-200">
                       {[
-                        <OpticsIcon key="optics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
                         <BatterySystemsIcon key="battery" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+                        <BatterySystemsIcon key="diagnostics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
                         <AiSystemsIcon key="ai" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
-                        <PhysicsIcon key="physics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+                        <OpticsIcon key="optics" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
+                        <ResearchIcon key="research" className="h-5 w-5" frameClass="h-8 w-8 rounded-xl" />,
                       ][index]}
                     </span>
                     <span>{bullet}</span>

@@ -1,17 +1,28 @@
 import ProjectDetailLayout from "@/app/components/project-detail-layout";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "AI Engineering Assistant | Dibya Jyoti Sarangi",
   description:
-    "Detailed case page for a local AI engineering assistant focused on safe retrieval and secure knowledge workflows.",
+    "Case page for engineering workflow intelligence that supports battery R&D and technical knowledge retrieval with local AI systems.",
+  alternates: {
+    canonical: "/projects/ai-engineering-assistant",
+  },
+  openGraph: {
+    type: "article",
+    url: "/projects/ai-engineering-assistant",
+    title: "AI Engineering Assistant | Dibya Jyoti Sarangi",
+    description:
+      "Sanitized case page for local engineering workflow intelligence supporting technical knowledge retrieval and battery R&D productivity.",
+  },
 };
 
 export default function AiEngineeringAssistantPage() {
   return (
     <ProjectDetailLayout
       title="AI Engineering Assistant"
-      category="AI Systems"
-      description="A local retrieval-driven assistant designed to make engineering knowledge accessible while keeping confidential data secure."
+      category="Engineering AI Systems"
+      description="A local retrieval-driven engineering intelligence assistant designed to support technical knowledge workflows while keeping confidential data secure."
       note="Sanitized public-safe case study: this page avoids proprietary or private company details."
     >
       <div className="grid gap-6 xl:grid-cols-[1.3fr_0.9fr]">
@@ -19,7 +30,7 @@ export default function AiEngineeringAssistantPage() {
           <article className="rounded-[2rem] border border-white/10 bg-slate-950/70 p-8 shadow-xl shadow-slate-950/20 backdrop-blur-xl ring-1 ring-white/5">
             <h2 className="text-2xl font-semibold text-white">Problem</h2>
             <p className="mt-4 leading-8 text-slate-300">
-              Engineering teams struggle to find the right documentation and technical context quickly. The goal was to create a secure way to query engineering knowledge without exposing confidential internal artifacts.
+              Battery R&D and engineering teams need fast access to technical context without exposing confidential internal artifacts. The goal was to create a secure way to query engineering knowledge and support practical decision-making.
             </p>
           </article>
 
