@@ -2,8 +2,10 @@ import { HeroSection } from "@/app/components/hero-section";
 import { ProfileSummary } from "@/app/components/profile-summary";
 import { JourneySection } from "@/app/components/journey-section";
 import { ResearchSection } from "@/app/components/research-section";
+import { IcfoSpotlight } from "@/app/components/icfo-spotlight";
 import { ProjectsGrid } from "@/app/components/projects-grid";
 import { SkillsSection } from "@/app/components/skills-section";
+import { Footer } from "@/app/components/footer";
 import { ChapterDivider, HolographicDivider } from "@/app/components/visual-system";
 
 export const metadata = {
@@ -25,10 +27,13 @@ export default function Home() {
           <JourneySection />
           <ChapterDivider index="02" label="Research Signal" />
           <ResearchSection />
+          <IcfoSpotlight />
           <ChapterDivider index="03" label="Applied Systems" />
           <ProjectsGrid />
           <ChapterDivider index="04" label="Capability Stack" />
           <SkillsSection />
+          <ChapterDivider index="05" label="Contact" />
+          <Footer />
         </div>
       </div>
     </main>

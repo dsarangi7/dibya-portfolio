@@ -30,6 +30,11 @@
 - [x] Add cinematic chapter dividers and homepage section transition language
 - [x] Align homepage visual branding across Hero, Journey, Research, Projects, and Skills
 - [x] Rebuild homepage hero with lightweight React Three Fiber scene and WebGL fallback
+- [x] Remove hero hydration mismatch and deprecated Three clock warning
+- [x] Remove remaining hero highlight hydration mismatch in dev
+- [x] Add ICFO research spotlight video section between Research and Projects
+- [x] Add homepage navigation anchors, hero CTA, and footer contact section
+- [x] Replace React Three Fiber hero with lightweight CSS/SVG holographic battery intelligence illustration
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel

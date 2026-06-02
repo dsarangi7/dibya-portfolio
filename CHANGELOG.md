@@ -1,7 +1,30 @@
 # Changelog
 
+## 2026-06-02 (Static hero illustration)
+- Replaced the React Three Fiber hero scene with a high-quality CSS/SVG holographic battery intelligence illustration.
+- Added a reusable `HeroHologramIllustration` component with a glowing battery core, orbital rings, telemetry nodes, circuit grid, and animated particles.
+- Removed the now-unused `@react-three/fiber`, `@react-three/drei`, and `three` dependencies while keeping the hero responsive and lightweight.
+
+## 2026-06-02 (Navigation polish)
+- Added homepage navigation anchors, hero CTA, and contact footer to improve recruiter usability and section discoverability.
+- Strengthened homepage rhythm with an ending contact section and quick links to journey, research, projects, skills, and contact.
+
+## 2026-06-02 (ICFO spotlight)
+- Added a dedicated ICFO research spotlight component after the Research section and before Projects.
+- Embedded the `public/msca-interview.mp4` interview video with controls, metadata preload, a glassmorphism frame, and a fallback message for load failure.
+- Kept the spotlight recruiter-facing and sanitized, with links to the public LinkedIn FLIGHT feature and a concise caption for the Medical Photonics group in Barcelona.
+
+## 2026-06-02 (Hero hydration cleanup)
+- Removed the hero highlight parallax transform that was causing a server/client hydration mismatch warning in dev.
+- Kept the cinematic hero layout and motion depth intact while making the rendered markup deterministic.
+
+## 2026-06-02 (Hero stability)
+- Removed the hero hydration mismatch by making the highlight reveal render deterministically between server and client.
+- Replaced the Three.js clock-driven animation path with a delta-based elapsed-time accumulator to avoid the deprecated clock warning in dev.
+
 ## 2026-06-02 (Hero redesign)
 - Rebuilt the homepage hero as a full-screen immersive section with a lightweight React Three Fiber battery intelligence core scene, orbital geometry, telemetry holograms, particles, and technical depth layers.
+- Increased the hero panel visual presence with a stronger central battery core, more orbital rings, telemetry nodes, and depth layers for a premium engineering dashboard feel.
 - Added mouse and scroll parallax for cinematic motion while preserving the existing hero copy and visual identity.
 - Added a WebGL fallback path for reduced-motion and non-WebGL devices.
 - Installed `@react-three/fiber`, `@react-three/drei`, and `three` for the homepage hero scene.
