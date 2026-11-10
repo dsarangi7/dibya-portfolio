@@ -44,7 +44,7 @@ export default function BomEngineeringWorkspacePage() {
       title={title}
       category="Engineering Operations"
       description={description}
-      note="Governed part lifecycles, BOM intelligence, and engineering change control."
+      note="A 30-engineer R&D team processed about 1,000 governed approvals on one BOM and ECN platform in 16 weeks (21 July–10 November 2026)."
     >
       <div className="grid gap-6 lg:grid-cols-2">
         {sections.map((section) => (

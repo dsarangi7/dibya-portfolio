@@ -43,7 +43,7 @@ export const featuredProjects: ProjectCard[] = [
     title: "BOM Engineering Workspace",
     subtitle: "Engineering operations",
     summary:
-      "Built and rolled out a production platform that moved the entire R&D engineering team from Excel to one workspace for part lifecycles, BOM intelligence, and ECN-linked ERP handoffs.",
+      "Moved a 30-engineer R&D team from Excel to one BOM and ECN platform that handled about 1,000 governed approvals in 16 weeks.",
     tags: ["BOM Intelligence", "Change Control", "ERP"],
     link: "/projects/bom-engineering-workspace",
   },
