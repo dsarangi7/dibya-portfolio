@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-10 (BOM Engineering Workspace)
+- Added a sanitized dashboard image to show the workspace’s item master and BOM tools.
 - Added a featured case study about the R&D engineering team’s move from Excel to a governed platform for BOMs, part revisions, ECNs, and ERP handoffs.
 
 ## 2026-06-02 (Positioning and chronology correction)
