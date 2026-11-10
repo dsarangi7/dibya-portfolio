@@ -40,6 +40,14 @@ export const featuredProjects: ProjectCard[] = [
     link: "/projects/battery-analytics",
   },
   {
+    title: "BOM Engineering Workspace",
+    subtitle: "Engineering operations",
+    summary:
+      "Built and rolled out a production platform that moved the entire R&D engineering team from Excel to one workspace for part lifecycles, BOM intelligence, and ECN-linked ERP handoffs.",
+    tags: ["BOM Intelligence", "Change Control", "ERP"],
+    link: "/projects/bom-engineering-workspace",
+  },
+  {
     title: "AI Engineering Assistant",
     subtitle: "Engineering workflow intelligence",
     summary:

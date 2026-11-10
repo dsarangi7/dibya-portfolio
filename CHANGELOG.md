@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-10 (BOM Engineering Workspace)
+- Added a featured case study about the R&D engineering team’s move from Excel to a governed platform for BOMs, part revisions, ECNs, and ERP handoffs.
+
 ## 2026-06-02 (Positioning and chronology correction)
 - Repositioned portfolio around current battery engineering identity and corrected career chronology.
 - Updated homepage copy, project summaries, skills language, SEO metadata, README, and reference docs so Dibya is presented first as a Battery R&D Engineer / Marine Battery Engineer.

@@ -40,6 +40,7 @@
 - [x] Add IIT Delhi Gold Medal announcement video spotlight near the IIT Delhi journey milestone
 - [x] Reposition homepage, project copy, metadata, and reference docs around current Battery R&D Engineer / Marine Battery Engineer identity
 - [x] Correct career chronology and clarify ICFO as PhD research / former FLIGHT Fellow experience, not a completed PhD
+- [x] Add the BOM Engineering Workspace case study and featured project card
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel
