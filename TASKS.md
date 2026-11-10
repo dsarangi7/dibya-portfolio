@@ -41,6 +41,7 @@
 - [x] Reposition homepage, project copy, metadata, and reference docs around current Battery R&D Engineer / Marine Battery Engineer identity
 - [x] Correct career chronology and clarify ICFO as PhD research / former FLIGHT Fellow experience, not a completed PhD
 - [x] Add the BOM Engineering Workspace case study and featured project card
+- [x] Highlight the Engineering Operating System in the homepage hero
 - [x] Add a sanitized Engineering Operating System dashboard image
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV

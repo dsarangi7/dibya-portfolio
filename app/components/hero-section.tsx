@@ -1,7 +1,8 @@
 "use client";
 
 import { HeroHologramIllustration } from "@/app/components/hero-hologram-illustration";
-import { heroCopy } from "@/app/lib/portfolio";
+import { engineeringOperatingSystem, heroCopy } from "@/app/lib/portfolio";
+import Link from "next/link";
 import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
 import { useRef, type PointerEvent } from "react";
 import { DjsMonogram } from "@/app/components/visual-system";
@@ -91,6 +92,15 @@ export function HeroSection() {
                 {heroCopy.headline}
               </p>
             </div>
+            <Link
+              href={engineeringOperatingSystem.link}
+              className="block rounded-3xl border border-cyan-300/35 bg-cyan-300/10 p-5 transition hover:border-cyan-200/70 hover:bg-cyan-300/15 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">Featured case study</p>
+              <h2 className="mt-2 text-xl font-semibold text-white">{engineeringOperatingSystem.subtitle}</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-200">{engineeringOperatingSystem.summary}</p>
+              <p className="mt-3 text-sm font-semibold text-cyan-200">Read the case study <span aria-hidden="true">↗</span></p>
+            </Link>
             <div className="grid gap-3 sm:grid-cols-3">
               {heroCopy.highlights.map((item) => (
                 <div key={item} className="visual-card rounded-3xl px-5 py-4">
