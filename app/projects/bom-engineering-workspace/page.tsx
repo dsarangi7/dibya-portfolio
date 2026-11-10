@@ -42,7 +42,7 @@ export default function BomEngineeringWorkspacePage() {
   return (
     <ProjectDetailLayout
       title={title}
-      category="Engineering Operations"
+      category="Engineering Operating System"
       description={description}
       note="A 30-engineer R&D team processed about 1,000 governed approvals on one BOM and ECN platform in 16 weeks (21 July–10 November 2026)."
     >

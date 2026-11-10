@@ -41,7 +41,7 @@ export const featuredProjects: ProjectCard[] = [
   },
   {
     title: "BOM Engineering Workspace",
-    subtitle: "Engineering operations",
+    subtitle: "Engineering Operating System",
     summary:
       "Moved a 30-engineer R&D team from Excel to one BOM and ECN platform that handled about 1,000 governed approvals in 16 weeks.",
     tags: ["BOM Intelligence", "Change Control", "ERP"],
