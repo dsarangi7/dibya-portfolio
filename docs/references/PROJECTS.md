@@ -25,7 +25,7 @@ Show sanitized architecture, retrieval constraints, engineering knowledge workfl
 ## BOM/ECN Engineering Workspace
 Type: Confidential company project
 Public description:
-Engineering workflow tool for BOM ingestion, ECN management, item master control, and admin review.
+Production workspace that moved the R&D engineering team from spreadsheets to one controlled record for BOMs, the item master, and engineering change notices. BOM comparisons and where-used analysis support revision review. Linking approved changes to ERP workflows helps procurement avoid part and revision mismatches.
 
 Tech:
 Next.js, SQLite, Python backend utilities, API routes, role-based workflows.

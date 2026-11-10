@@ -10,6 +10,10 @@ function ProjectGlyph({ title }: { title: string }) {
     return <BatterySystemsIcon />;
   }
 
+  if (title === "BOM Engineering Workspace") {
+    return <AiSystemsIcon title="Engineering systems" />;
+  }
+
   if (title.includes("AI")) {
     return <AiSystemsIcon />;
   }
