@@ -68,6 +68,12 @@ export function Footer() {
                       {project.title}
                     </Link>
                   ))}
+                  <a
+                    href="https://batterycalculators.com/about/"
+                    className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200 transition hover:border-cyan-300/25 hover:bg-cyan-300/10 hover:text-white"
+                  >
+                    Battery Calculators ↗
+                  </a>
                 </div>
               </div>
               <div>
