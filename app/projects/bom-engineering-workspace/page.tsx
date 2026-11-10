@@ -49,15 +49,17 @@ export default function BomEngineeringWorkspacePage() {
       note="A 30-engineer R&D team processed about 1,000 governed approvals on one BOM and ECN platform in 16 weeks (21 July–10 November 2026)."
     >
       <figure className="overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/70">
-        <Image
-          src={workspacePreview}
-          alt="Engineering Operating System workspace with item search, item master governance, and BOM conversion and comparison tools"
-          className="h-auto w-full"
-          sizes="(min-width: 1280px) 1152px, 100vw"
-        />
+        <a href="https://engineering-operating-system-demo.vercel.app/" aria-label="Open the Engineering Operating System demo" className="block">
+          <Image
+            src={workspacePreview}
+            alt="Engineering Operating System workspace with item search, item master governance, and BOM conversion and comparison tools"
+            className="h-auto w-full"
+            sizes="(min-width: 1280px) 1152px, 100vw"
+          />
+        </a>
         <figcaption className="border-t border-white/10 px-6 py-4 text-sm leading-6 text-slate-300">
           Sanitized recreation of the Engineering Operating System dashboard. Engineers can search the item master,
-          compare BOMs, and roll up part quantities from the same workspace.
+          compare BOMs, and roll up part quantities from the same workspace. Select the image to open the live demo.
         </figcaption>
       </figure>
 
