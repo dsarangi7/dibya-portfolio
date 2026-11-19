@@ -17,11 +17,11 @@ export default function ProjectDetailLayout({
   children,
 }: ProjectDetailLayoutProps) {
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 px-6 py-12 sm:px-10 lg:px-16">
+    <main className="min-h-screen px-6 pt-24 pb-16 sm:px-10 lg:pr-16 lg:pl-40 lg:pt-16">
       <div className="mx-auto max-w-6xl space-y-10">
-        <section className="rounded-[2rem] border border-white/10 bg-slate-950/70 p-10 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl ring-1 ring-white/5">
-          <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">{category}</p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+        <section className="border-b border-line pb-12">
+          <p className="font-mono text-sm uppercase tracking-[0.24em] text-primary">{category}</p>
+          <h1 className="mt-4 text-4xl font-medium tracking-tight text-title sm:text-6xl">
             {title}
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{description}</p>
@@ -29,9 +29,9 @@ export default function ProjectDetailLayout({
             <Link
               href="/"
               aria-label="Back to the portfolio homepage"
-              className="inline-flex w-fit items-center justify-center rounded-full border border-cyan-400/20 bg-white/5 px-5 py-3 text-sm font-medium text-cyan-100 transition hover:bg-cyan-500/10"
+              className="accent-link inline-flex w-fit items-center text-sm font-medium text-body"
             >
-              Back to home
+              ← Back to home
             </Link>
             <p className="max-w-2xl text-sm leading-6 text-slate-400">{note}</p>
           </div>

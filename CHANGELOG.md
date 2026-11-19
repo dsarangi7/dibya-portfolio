@@ -1,7 +1,25 @@
 # Changelog
 
+## 2026-11-19 (Hamish-style redesign and Lab)
+- Rebuilt the homepage on the design system of Hamish Williams' open-source portfolio (MIT), rewritten in TypeScript for Next.js: fixed vertical nav rail with mobile overlay, physics-glyph decoding text, notched section dividers, accent-wipe headline with rotating disciplines, and a pointer-reactive WebGL displacement sphere (`three`).
+- Kept the battery hologram as the hero's focal object, now parallaxing out on scroll.
+- Replaced glassmorphism cards with a flat token-based system (Space Grotesk + JetBrains Mono, cyan primary, gold battery accent).
+- Featured work is now four full-height alternating chapters with original animated schematics; no screenshots or internal data.
+- Added a Lab section of public GitHub side projects, with language, last push, and stars pulled from the GitHub API and revalidated daily, plus category filters.
+- Rewrote the story in first person, with a scroll-drawn timeline; merged research, publications, and the ICFO / IIT Delhi videos into one section; added a toolkit and a new contact section.
+- Restyled project case pages and 404 to the new tokens; fixed duplicate SVG gradient ids in the monogram and duplicated page titles.
+- Added `THIRD_PARTY_NOTICES.md` with the MIT notices; footer credits the original design.
+
 ## 2026-11-10 (BOM Engineering Workspace)
 - Added a featured case study about the R&D engineering team’s move from Excel to a governed platform for BOMs, part revisions, ECNs, and ERP handoffs.
+
+## 2026-06-02 (Deployment readiness audit)
+- Completed a production deployment readiness pass for repository hygiene, security, SEO, accessibility, assets, and Vercel compatibility.
+- Removed unused default public SVG assets and a duplicate ICFO video asset to reduce repository and deployment weight.
+- Added Vercel-aware site URL handling plus static `robots.txt` and `sitemap.xml` routes.
+- Added global focus-visible styling for keyboard accessibility and tightened `.gitignore` for local editor, temporary, backup, and log files.
+- Generalized project reference labels from confidential company wording to sanitized industrial project wording.
+- Verified contact links, public video references, homepage anchors, project routes, metadata coverage, and production build output.
 
 ## 2026-06-02 (Positioning and chronology correction)
 - Repositioned portfolio around current battery engineering identity and corrected career chronology.

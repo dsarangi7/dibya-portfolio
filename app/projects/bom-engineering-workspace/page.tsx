@@ -6,7 +6,7 @@ const description =
   "I built and rolled out a production engineering operating system that moved the entire R&D engineering team from Excel to one workspace for part lifecycles, bills of materials, and engineering changes.";
 
 export const metadata: Metadata = {
-  title,
+  title: `${title} | Dibya Jyoti Sarangi`,
   description,
   alternates: {
     canonical: "/projects/bom-engineering-workspace",
@@ -50,10 +50,10 @@ export default function BomEngineeringWorkspacePage() {
         {sections.map((section) => (
           <section
             key={section.title}
-            className="rounded-[2rem] border border-white/10 bg-slate-950/70 p-8 shadow-xl shadow-slate-950/20 ring-1 ring-white/5"
+            className="border border-line bg-bg-light/50 p-8"
           >
-            <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
-            <p className="mt-4 leading-8 text-slate-300">{section.body}</p>
+            <h2 className="text-2xl font-medium text-title">{section.title}</h2>
+            <p className="mt-4 leading-8 text-body">{section.body}</p>
           </section>
         ))}
       </div>

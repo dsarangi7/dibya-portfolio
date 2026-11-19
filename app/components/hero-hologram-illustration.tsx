@@ -1,7 +1,5 @@
 "use client";
 
-import { DjsMonogram } from "@/app/components/visual-system";
-
 const particles = [
   ["left-[14%] top-[18%]", "h-1.5 w-1.5", "animation-delay-[-1.2s]"],
   ["left-[23%] top-[72%]", "h-1 w-1", "animation-delay-[-2.7s]"],
@@ -126,9 +124,6 @@ export function HeroHologramIllustration() {
         </g>
       </svg>
 
-      <div className="absolute left-[13%] top-[13%] z-20">
-        <DjsMonogram className="h-16 w-16 opacity-90" />
-      </div>
     </div>
   );
 }

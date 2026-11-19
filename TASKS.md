@@ -40,7 +40,18 @@
 - [x] Add IIT Delhi Gold Medal announcement video spotlight near the IIT Delhi journey milestone
 - [x] Reposition homepage, project copy, metadata, and reference docs around current Battery R&D Engineer / Marine Battery Engineer identity
 - [x] Correct career chronology and clarify ICFO as PhD research / former FLIGHT Fellow experience, not a completed PhD
+- [x] Complete deployment readiness audit for repository hygiene, security, SEO, accessibility, assets, and Vercel compatibility
+- [x] Add Vercel-aware sitemap and robots routes
+- [x] Remove unused public template assets and duplicate ICFO video asset
+- [x] Add global keyboard focus styling and tighten `.gitignore`
 - [x] Add the BOM Engineering Workspace case study and featured project card
+- [x] Redesign homepage on Hamish Williams' open-source portfolio system (MIT): vertical nav rail, decoding text, notched dividers, morphing WebGL sphere, alternating project chapters
+- [x] Keep battery hologram as hero focal object with scroll parallax
+- [x] Replace project mockups with original animated engineering schematics (battery traces, BOM tree, local RAG flow, diffuse optics)
+- [x] Add Lab section of public GitHub side projects with live repo metadata and filters
+- [x] Rewrite homepage story in first person; merge journey, research, and video spotlights
+- [ ] Review first-person story copy and Lab project selection
+- [ ] Decide whether the public WireFlow repo should stay public (describes employer-internal tooling)
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
 - [ ] Deploy to Vercel

@@ -1,7 +1,7 @@
 # Projects
 
 ## Battery Analytics & Intelligent Diagnostics
-Type: Confidential company project
+Type: Sanitized industrial project
 Public description:
 Public-safe battery analytics and diagnostics workflow for marine lithium-ion systems, focused on telemetry interpretation, parameter estimation, anomaly detection, and engineering review.
 
@@ -11,8 +11,8 @@ MATLAB, Python, telemetry analytics, statistical diagnostics, validation workflo
 Safe portfolio angle:
 Show sanitized architecture, diagnostic thinking, and workflow value. Do not show private datasets, exact internal metrics, customer details, or proprietary company data.
 
-## AYK AI Assistant
-Type: Confidential company project
+## AI Engineering Assistant
+Type: Sanitized industrial project
 Public description:
 Offline RAG-based engineering workflow intelligence assistant for internal technical knowledge.
 
@@ -23,7 +23,7 @@ Safe portfolio angle:
 Show sanitized architecture, retrieval constraints, engineering knowledge workflow, and future roadmap. Do not show private documents or company data.
 
 ## BOM/ECN Engineering Workspace
-Type: Confidential company project
+Type: Sanitized industrial project
 Public description:
 Production workspace that moved the R&D engineering team from spreadsheets to one controlled record for BOMs, the item master, and engineering change notices. BOM comparisons and where-used analysis support revision review. Linking approved changes to ERP workflows helps procurement avoid part and revision mismatches.
 
@@ -34,7 +34,7 @@ Safe portfolio angle:
 Show sanitized system architecture, workflow diagram, and product thinking.
 
 ## Battery Anomaly Dashboard
-Type: Confidential company project
+Type: Sanitized industrial project
 Public description:
 Interactive dashboard for battery cell voltage anomaly detection and visualization.
 

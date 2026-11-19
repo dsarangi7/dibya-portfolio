@@ -1,4 +1,4 @@
-import type { ComponentProps, ReactNode } from "react";
+import { useId, type ComponentProps, type ReactNode } from "react";
 
 type SvgProps = ComponentProps<"svg"> & {
   title?: string;
@@ -16,6 +16,9 @@ function IconFrame({ children, className = "" }: { children: ReactNode; classNam
 }
 
 export function DjsMonogram({ className = "", title = "DJS monogram", ...props }: SvgProps) {
+  const uid = useId().replace(/:/g, "");
+  const gradientId = `djs-mark-gradient-${uid}`;
+  const glowId = `djs-mark-glow-${uid}`;
   return (
     <svg
       viewBox="0 0 96 96"
@@ -26,12 +29,12 @@ export function DjsMonogram({ className = "", title = "DJS monogram", ...props }
       {...props}
     >
       <defs>
-        <linearGradient id="djs-mark-gradient" x1="14" y1="10" x2="82" y2="88" gradientUnits="userSpaceOnUse">
+        <linearGradient id={gradientId} x1="14" y1="10" x2="82" y2="88" gradientUnits="userSpaceOnUse">
           <stop stopColor="#67e8f9" />
           <stop offset="0.48" stopColor="#60a5fa" />
           <stop offset="1" stopColor="#f8d36b" />
         </linearGradient>
-        <filter id="djs-mark-glow" x="-40%" y="-40%" width="180%" height="180%">
+        <filter id={glowId} x="-40%" y="-40%" width="180%" height="180%">
           <feGaussianBlur stdDeviation="3.2" result="blur" />
           <feColorMatrix
             in="blur"
@@ -43,35 +46,35 @@ export function DjsMonogram({ className = "", title = "DJS monogram", ...props }
       </defs>
       <path
         d="M16 48C16 30.3 30.3 16 48 16h19c7.2 0 13 5.8 13 13v38c0 7.2-5.8 13-13 13H48C30.3 80 16 65.7 16 48Z"
-        stroke="url(#djs-mark-gradient)"
+        stroke={`url(#${gradientId})`}
         strokeWidth="2"
         opacity="0.9"
       />
-      <path d="M48 16v64" stroke="url(#djs-mark-gradient)" strokeWidth="1.2" opacity="0.35" />
-      <path d="M17 48h62" stroke="url(#djs-mark-gradient)" strokeWidth="1.2" opacity="0.25" />
+      <path d="M48 16v64" stroke={`url(#${gradientId})`} strokeWidth="1.2" opacity="0.35" />
+      <path d="M17 48h62" stroke={`url(#${gradientId})`} strokeWidth="1.2" opacity="0.25" />
       <path
         d="M29 65V31h13c9.5 0 16 6.8 16 17s-6.5 17-16 17H29Z"
-        stroke="url(#djs-mark-gradient)"
+        stroke={`url(#${gradientId})`}
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
-        filter="url(#djs-mark-glow)"
+        filter={`url(#${glowId})`}
       />
       <path
         d="M58 32h13M64.5 32v25c0 5.6-3.9 9-9.5 9-3.2 0-6.1-1.2-8-3.5"
-        stroke="url(#djs-mark-gradient)"
+        stroke={`url(#${gradientId})`}
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
-        filter="url(#djs-mark-glow)"
+        filter={`url(#${glowId})`}
       />
       <path
         d="M72 47c-2.2-2.2-5.1-3.2-8.2-3.2-4.1 0-6.8 1.7-6.8 4.3 0 6.7 17 2.4 17 12.2 0 4.9-4.2 7.7-10.7 7.7-4.5 0-8.2-1.4-10.8-4"
-        stroke="url(#djs-mark-gradient)"
+        stroke={`url(#${gradientId})`}
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
-        filter="url(#djs-mark-glow)"
+        filter={`url(#${glowId})`}
       />
       <circle cx="24" cy="24" r="2" fill="#67e8f9" />
       <circle cx="72" cy="72" r="2" fill="#f8d36b" />

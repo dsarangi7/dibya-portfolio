@@ -1,143 +1,144 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens. Structure, motion curves and scale adapted from
+ * Hamish Williams' open-source portfolio (MIT) — see THIRD_PARTY_NOTICES.md.
+ */
 :root {
   color-scheme: dark;
-  --background: #030712;
-  --foreground: #e2e8f0;
-  --panel: rgba(15, 23, 42, 0.78);
-  --border: rgba(148, 163, 184, 0.12);
-  --cyan: #67e8f9;
-  --blue: #60a5fa;
-  --violet: #a78bfa;
-  --gold: #f8d36b;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --background: oklch(16.5% 0.006 250);
+  --background-light: oklch(20.5% 0.008 250);
+  --background-raised: oklch(23.5% 0.01 250);
+  --primary: oklch(84.42% 0.19 202.24);
+  --gold: oklch(86% 0.13 88);
+  --text: oklch(100% 0 0);
+  --text-title: var(--text);
+  --text-body: color-mix(in oklab, var(--text) 78%, transparent);
+  --text-light: color-mix(in oklab, var(--text) 56%, transparent);
+  --line: color-mix(in oklab, var(--text) 12%, transparent);
+  --bezier-fastout-slowin: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
+  --color-bg: var(--background);
+  --color-bg-light: var(--background-light);
+  --color-bg-raised: var(--background-raised);
+  --color-primary: var(--primary);
+  --color-gold: var(--gold);
+  --color-title: var(--text-title);
+  --color-body: var(--text-body);
+  --color-muted: var(--text-light);
+  --color-line: var(--line);
+  --font-sans: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-code), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ease-fastout: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  background: var(--background);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
-  background: radial-gradient(circle at top, rgba(34, 211, 238, 0.13), transparent 25%),
-    radial-gradient(circle at 80% 20%, rgba(167, 139, 250, 0.09), transparent 18%),
-    var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  background: var(--background);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-.identity-field::before {
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--background);
+}
+
+:where(a, button, video, [tabindex]):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+/* Fine film grain + faint engineering grid behind everything */
+.page-grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--text) 3%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--text) 3%, transparent) 1px, transparent 1px);
+  background-size: 96px 96px;
+  mask-image: radial-gradient(ellipse at 70% 0%, black 0%, transparent 70%);
+}
+
+/* Hamish-style accent wipe used on headline words */
+@keyframes accent-wipe {
+  0% { transform: scaleX(0); transform-origin: left; }
+  49% { transform: scaleX(1); transform-origin: left; }
+  50% { transform: scaleX(1); transform-origin: right; }
+  100% { transform: scaleX(0); transform-origin: right; }
+}
+
+@keyframes word-colour-in {
+  0%, 50% { color: transparent; }
+  51%, 100% { color: var(--text-title); }
+}
+
+.wipe-word {
+  position: relative;
+  display: inline-flex;
+  isolation: isolate;
+  color: transparent;
+  animation: word-colour-in 1.5s var(--bezier-fastout-slowin) var(--wipe-delay, 0s) forwards;
+}
+
+.wipe-word::after {
   content: "";
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(115deg, transparent 0 42%, rgba(103, 232, 249, 0.06) 42.2%, transparent 43% 100%),
-    linear-gradient(245deg, transparent 0 58%, rgba(248, 211, 107, 0.05) 58.2%, transparent 59% 100%);
-  mask-image: linear-gradient(to bottom, black, transparent 92%);
-}
-
-.identity-field::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.025) 0,
-    rgba(255, 255, 255, 0.025) 1px,
-    transparent 1px,
-    transparent 7px
-  );
-  opacity: 0.24;
-  mix-blend-mode: screen;
-}
-
-.visual-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(103, 232, 249, 0.14);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025) 38%, rgba(103, 232, 249, 0.035)),
-    rgba(2, 6, 23, 0.62);
-  box-shadow:
-    0 24px 90px rgba(2, 6, 23, 0.34),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 0 0 1px rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(22px);
-}
-
-.visual-card > * {
-  position: relative;
+  inset: 0 -0.02em 0 0;
+  background: var(--primary);
+  transform: scaleX(0);
   z-index: 1;
+  animation: accent-wipe 1.5s var(--bezier-fastout-slowin) var(--wipe-delay, 0s) forwards;
 }
 
-.visual-card::before,
-.hologram-panel::before,
-.project-card::after {
+/* Underline bar used on nav + inline links */
+.accent-link {
+  position: relative;
+  text-decoration: none;
+  background-image: linear-gradient(var(--primary), var(--primary));
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  transition: background-size 400ms var(--bezier-fastout-slowin), color 300ms ease;
+}
+
+.accent-link:hover,
+.accent-link:focus-visible {
+  background-size: 100% 2px;
+  color: var(--text-title);
+}
+
+@keyframes scroll-dot {
+  0% { transform: translate3d(-1px, 0, 0); opacity: 0; }
+  20% { transform: translate3d(-1px, 0, 0); opacity: 1; }
+  100% { transform: translate3d(-1px, 8px, 0); opacity: 0; }
+}
+
+.scroll-indicator::before {
   content: "";
   position: absolute;
-  pointer-events: none;
-}
-
-.visual-card::before {
-  inset: 0;
-  border-radius: inherit;
-  background:
-    linear-gradient(90deg, rgba(103, 232, 249, 0.32), transparent 30%, transparent 70%, rgba(248, 211, 107, 0.18)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 34%);
-  opacity: 0.36;
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  padding: 1px;
-}
-
-.hologram-panel {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background:
-    linear-gradient(135deg, rgba(15, 23, 42, 0.78), rgba(8, 13, 28, 0.9)),
-    radial-gradient(circle at top right, rgba(103, 232, 249, 0.12), transparent 35%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-}
-
-.hologram-panel::before {
-  top: 0;
-  left: 16px;
-  right: 16px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(103, 232, 249, 0.7), transparent);
-}
-
-.visual-icon-frame::before {
-  content: "";
-  position: absolute;
-  inset: -45%;
-  background: conic-gradient(from 140deg, transparent, rgba(103, 232, 249, 0.34), rgba(167, 139, 250, 0.2), transparent);
-  opacity: 0.65;
-}
-
-.visual-icon-frame svg {
-  position: relative;
-  z-index: 1;
-}
-
-.project-card::after {
-  inset: auto 20px 0 20px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(248, 211, 107, 0.45), rgba(103, 232, 249, 0.42), transparent);
-  opacity: 0;
-  transition: opacity 240ms ease;
-}
-
-.project-card:hover::after {
-  opacity: 1;
+  top: 6px;
+  left: 50%;
+  width: 2px;
+  height: 7px;
+  border-radius: 4px;
+  background: var(--text-light);
+  animation: scroll-dot 2s ease infinite;
 }
 
 .hero-hologram {
@@ -261,54 +262,19 @@ body {
   50% { opacity: 0.82; transform: translateY(5px); }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-::selection {
-  background: rgba(56, 189, 248, 0.32);
-  color: white;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Technical grid background */
-.tech-grid {
-  background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-  background-size: 48px 48px, 48px 48px;
-  background-position: 0 0, 0 0;
-  will-change: background-position;
-  animation: grid-pan 18s linear infinite;
-}
-
-@keyframes grid-pan {
-  from { background-position: 0 0, 0 0; }
-  to { background-position: -240px 120px, 240px -120px; }
-}
-
-/* Simple particle layer (performant, few large particles) */
-.particles {
-  background-image: radial-gradient(circle at 10% 20%, rgba(56,189,248,0.06) 0px, transparent 40px),
-    radial-gradient(circle at 80% 10%, rgba(129,140,248,0.05) 0px, transparent 50px),
-    radial-gradient(circle at 60% 70%, rgba(124,58,237,0.04) 0px, transparent 60px);
-  background-repeat: no-repeat;
-  animation: particles-drift 16s ease-in-out infinite;
-}
-
-@keyframes particles-drift {
-  0% { transform: translateY(0) scale(1); opacity: 0.95 }
-  50% { transform: translateY(-8px) scale(1.02); opacity: 0.9 }
-  100% { transform: translateY(0) scale(1); opacity: 0.95 }
-}
 
 @media (prefers-reduced-motion: reduce) {
-  .tech-grid,
-  .particles,
   .hero-hologram *,
-  .hero-hologram::before,
-  .hero-hologram::after {
+  .scroll-indicator::before {
     animation: none !important;
+  }
+
+  .wipe-word {
+    animation: none;
+    color: var(--text-title);
+  }
+
+  .wipe-word::after {
+    display: none;
   }
 }

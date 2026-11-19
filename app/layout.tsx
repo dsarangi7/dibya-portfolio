@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
+import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import Background from "@/app/components/background";
-import PageTransition from "@/app/components/page-transition";
+import { Navbar } from "@/app/components/navbar";
+import { Providers } from "@/app/components/providers";
+import { siteUrl } from "@/app/lib/site";
 
-const siteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000");
+const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
+const code = JetBrains_Mono({ subsets: ["latin"], variable: "--font-code", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   title: {
     default: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
-    template: "%s | Dibya Jyoti Sarangi",
+    template: "%s",
   },
   description:
     "Portfolio homepage for Dibya Jyoti Sarangi, a Battery R&D Engineer focused on marine battery systems, battery analytics, intelligent diagnostics, and AI engineering systems.",
@@ -55,10 +58,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className="min-h-full bg-slate-950 text-slate-100">
-        <Background />
-        <PageTransition>{children}</PageTransition>
+    <html lang="en" className={`${display.variable} ${code.variable} h-full antialiased`}>
+      <body className="min-h-full">
+        <a
+          href="#work"
+          className="sr-only z-[60] bg-primary px-4 py-2 text-bg focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
+        >
+          Skip to content
+        </a>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
