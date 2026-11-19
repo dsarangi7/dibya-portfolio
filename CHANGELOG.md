@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-19 (Signal-acquisition portrait)
+- Story section now pins on desktop while a scroll-driven "signal acquisition" scene plays: flat cell-voltage-style traces draw in, lock onto the portrait as a brightness-modulated raster, and a gold scan line hands over to a cyan-graded photo (HUD reads ARMED → ACQUIRING → RESOLVING → LOCKED).
+- The portrait is sampled on the client into a subject-masked luminance grid (colour distance from the border plus a low-saturation wall test, unsharp mask, contrast stretch); canvas 2D only, no WebGL, and drawing stops when off screen.
+- Story paragraphs light up in turn as the scene advances; the timeline moved below the scene.
+- Mobile plays the scene as the portrait scrolls through without pinning; reduced motion shows the final photo.
+
 ## 2026-11-19 (Hamish-style redesign and Lab)
 - Rebuilt the homepage on the design system of Hamish Williams' open-source portfolio (MIT), rewritten in TypeScript for Next.js: fixed vertical nav rail with mobile overlay, physics-glyph decoding text, notched section dividers, accent-wipe headline with rotating disciplines, and a pointer-reactive WebGL displacement sphere (`three`).
 - Kept the battery hologram as the hero's focal object, now parallaxing out on scroll.

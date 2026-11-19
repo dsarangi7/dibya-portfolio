@@ -62,3 +62,8 @@
 - [x] Create `docs` subfolders: `assets`, `screenshots`, `diagrams`, `references`, `inspiration`
 - [x] Create project-local Codex skills for cinematic design, visual assets, recruiter storytelling, and confidentiality checks
 - [x] Update `AGENTS.md` with project knowledge and skill usage guidance
+
+## Phase 5 (Signal-acquisition portrait)
+- [x] Add portrait asset and scroll-driven signal-trace portrait scene in Story
+- [x] Pin the scene on desktop, scroll-scrub on mobile, reduced-motion fallback
+- [ ] Replace the 400px portrait with a higher-resolution original (1200px or larger)
