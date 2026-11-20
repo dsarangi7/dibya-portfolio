@@ -1,4 +1,4 @@
-import { useId, type ComponentProps, type ReactNode } from "react";
+import { type ComponentProps, type ReactNode } from "react";
 
 type SvgProps = ComponentProps<"svg"> & {
   title?: string;
@@ -15,69 +15,21 @@ function IconFrame({ children, className = "" }: { children: ReactNode; classNam
   );
 }
 
-export function DjsMonogram({ className = "", title = "DJS monogram", ...props }: SvgProps) {
-  const uid = useId().replace(/:/g, "");
-  const gradientId = `djs-mark-gradient-${uid}`;
-  const glowId = `djs-mark-glow-${uid}`;
+/**
+ * Brand mark: a battery cell with a charge bar and "dj" drawn as strokes
+ * (no font dependency). Colours follow the theme tokens.
+ */
+export function DjsMonogram({ className = "", title = "Dibya Jyoti Sarangi", ...props }: SvgProps) {
   return (
-    <svg
-      viewBox="0 0 96 96"
-      role="img"
-      aria-label={title}
-      className={className}
-      fill="none"
-      {...props}
-    >
-      <defs>
-        <linearGradient id={gradientId} x1="14" y1="10" x2="82" y2="88" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#67e8f9" />
-          <stop offset="0.48" stopColor="#60a5fa" />
-          <stop offset="1" stopColor="#f8d36b" />
-        </linearGradient>
-        <filter id={glowId} x="-40%" y="-40%" width="180%" height="180%">
-          <feGaussianBlur stdDeviation="3.2" result="blur" />
-          <feColorMatrix
-            in="blur"
-            type="matrix"
-            values="0 0 0 0 0.25 0 0 0 0 0.9 0 0 0 0 1 0 0 0 0.5 0"
-          />
-          <feBlend in="SourceGraphic" />
-        </filter>
-      </defs>
-      <path
-        d="M16 48C16 30.3 30.3 16 48 16h19c7.2 0 13 5.8 13 13v38c0 7.2-5.8 13-13 13H48C30.3 80 16 65.7 16 48Z"
-        stroke={`url(#${gradientId})`}
-        strokeWidth="2"
-        opacity="0.9"
-      />
-      <path d="M48 16v64" stroke={`url(#${gradientId})`} strokeWidth="1.2" opacity="0.35" />
-      <path d="M17 48h62" stroke={`url(#${gradientId})`} strokeWidth="1.2" opacity="0.25" />
-      <path
-        d="M29 65V31h13c9.5 0 16 6.8 16 17s-6.5 17-16 17H29Z"
-        stroke={`url(#${gradientId})`}
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        filter={`url(#${glowId})`}
-      />
-      <path
-        d="M58 32h13M64.5 32v25c0 5.6-3.9 9-9.5 9-3.2 0-6.1-1.2-8-3.5"
-        stroke={`url(#${gradientId})`}
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        filter={`url(#${glowId})`}
-      />
-      <path
-        d="M72 47c-2.2-2.2-5.1-3.2-8.2-3.2-4.1 0-6.8 1.7-6.8 4.3 0 6.7 17 2.4 17 12.2 0 4.9-4.2 7.7-10.7 7.7-4.5 0-8.2-1.4-10.8-4"
-        stroke={`url(#${gradientId})`}
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        filter={`url(#${glowId})`}
-      />
-      <circle cx="24" cy="24" r="2" fill="#67e8f9" />
-      <circle cx="72" cy="72" r="2" fill="#f8d36b" />
+    <svg viewBox="0 0 48 48" role="img" aria-label={title} className={className} fill="none" {...props}>
+      <g stroke="var(--text-title)" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4.5" y="12.5" width="35" height="23" rx="3.5" strokeWidth="2.6" />
+        <circle cx="24.6" cy="27.6" r="3.6" strokeWidth="2.3" />
+        <path d="M28.2 18.6v12.6M34.6 23.2v6.6a2.6 2.6 0 0 1-2.6 2.6" strokeWidth="2.3" />
+      </g>
+      <rect x="40.2" y="19.5" width="3.6" height="9" rx="1.2" fill="var(--text-title)" />
+      <circle cx="34.6" cy="18.9" r="1.45" fill="var(--text-title)" />
+      <rect x="8.6" y="16.6" width="8.4" height="14.8" rx="1.2" fill="var(--primary)" />
     </svg>
   );
 }

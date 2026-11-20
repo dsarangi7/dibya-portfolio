@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-20 (New logo)
+- Replaced the gradient "DJS" monogram with a battery-cell mark: a cell outline, a charge bar in the primary colour, and "dj" drawn as strokes. It follows the light/dark theme tokens and stays legible at nav size.
+- Added a matching `app/icon.svg` favicon that adapts to the browser's colour scheme, replacing the default Next.js favicon.
+
 ## 2026-11-20 (Mobile tap targets)
 - Checked every page at 375 px: no horizontal scroll, the menu and the photon animation adapt.
 - Lab card links ("Open live", "Source on GitHub", the GitHub profile link) now have a 44 px tap area, and the small "Also:" links 32 px, through an invisible `.tap-target` hit area, so the look is unchanged.
