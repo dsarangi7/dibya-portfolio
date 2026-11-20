@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-20 (Photon migration animation)
+- Replaced the static optics schematic on the research case study with a live, original photon-migration animation: a 2D Monte Carlo random walk (reduced scattering 1/mm, absorption 0.006/mm) where one photon scatters its way to the first detector, then a Web Worker simulates hundreds of thousands more so the banana-shaped path-density maps for 1, 2 and 3 cm separations emerge from the physics.
+- Mean photon paths and a penetration-depth marker are drawn over the bananas; moving red blood cells flash when a photon scatters off them; TRS (time-of-flight) and DCS (g2) insets fill from the same simulation.
+- Hover or tap a detector or chip to focus its banana; pauses off screen; theme-aware; reduced motion shows the final static frame. Labelled as simulated.
+
+## 2026-11-20 (ICFO period, from the certificates)
+- Reframed the ICFO period as PhD trainee in the Medical Optics group (July 2023 – January 2025), left voluntarily to move into energy, certified with an ICFO Certificate of Advanced Training in Photonics. Story, timeline, Research intro, featured card, and `docs/references` updated.
+- Rewrote the Multimodal Spectroscopic Systems case study around the LUCA thyroid-screening work with Hospital Clínic Barcelona, DCS/TRS acquisition, MATLAB and R analysis, ICFO training, and what carried over to battery work; removed unsupported claims (fluorescence, field deployment).
+- Corrected the group name from "Medical Photonics" to "Medical Optics". No certificate images or identity numbers are published.
+
 ## 2026-11-20 (SOH Calculator case study)
 - Added SOH Calculator as featured project 02, with a new animated schematic (charge window → OCV–SOC lookup → per-cell SOH bars → report) and an optional stack line on project cards.
 - New case study at `/projects/soh-calculator`: problem, outcome (about a week of manual work → minutes), the capacity-based SOH method as seven steps, and the tech stack.

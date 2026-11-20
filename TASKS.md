@@ -76,3 +76,9 @@
 ## Phase 7 (SOH Calculator case study)
 - [x] Add sanitized SOH Calculator card, schematic, and case study page
 - [x] Add case study routes to the sitemap
+
+## Phase 8 (ICFO period accuracy)
+- [x] Align ICFO copy with the certificates: PhD trainee, not completed, voluntary move to energy
+- [x] Rewrite the research case study with verified methods, project, and training
+- [x] Live photon-migration (banana) animation with TRS and DCS insets on the research case study
+- [ ] Optional: export a short video loop of the animation for LinkedIn

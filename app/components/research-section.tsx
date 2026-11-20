@@ -52,7 +52,7 @@ export function ResearchSection() {
         index="04"
         label="Research"
         title="Where the rigour comes from"
-        intro="Before batteries I worked on light in tissue: hybrid time-domain and diffuse correlation spectroscopy for thyroid characterisation in ICFO's Medical Photonics group. I still use the same habits every day: calibrate first, distrust a clean result, and write down the method."
+        intro="Before batteries I worked on light in tissue: hybrid time-domain and diffuse correlation spectroscopy for thyroid screening in ICFO's Medical Optics group, with Hospital Clínic Barcelona. I still use the same habits every day: calibrate first, distrust a clean result, and write down the method."
       />
 
       <ul className="mb-20 divide-y divide-line border-y border-line">
@@ -80,7 +80,7 @@ export function ResearchSection() {
           <Film
             src="/msca-interview.mp4"
             label="ICFO FLIGHT fellowship research interview"
-            caption="MSCA FLIGHT fellowship feature: Medical Photonics group, ICFO Barcelona."
+            caption="MSCA FLIGHT fellowship feature: Medical Optics group, ICFO Barcelona."
           />
         </Reveal>
         <Reveal delay={0.15}>

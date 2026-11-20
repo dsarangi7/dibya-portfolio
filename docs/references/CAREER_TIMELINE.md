@@ -13,10 +13,11 @@
 - Focused on applied optics, optical instrumentation, signal processing, and biomedical optics.
 - Awarded the Dr. Shankar Dayal Sharma Gold Medal for academic excellence and institutional achievement.
 
-## 2023-2025: PhD Research / Marie Sklodowska-Curie FLIGHT Fellow
-- Institute of Photonic Sciences (ICFO), Barcelona.
-- Former Marie Sklodowska-Curie FLIGHT Fellow working in biomedical photonics and medical optics research.
-- PhD research period was not completed; present this as research experience, not as a completed PhD.
+## July 2023-January 2025: PhD Trainee / Marie Sklodowska-Curie FLIGHT Fellow
+- Institute of Photonic Sciences (ICFO), Barcelona; Medical Optics group (Prof. Turgut Durduran); PhD in Photonics programme with UPC.
+- LUCA project with Hospital Clinic Barcelona: point-of-care, low-cost laser + ultrasound thyroid nodule screening.
+- DCS and TRS acquisition; MATLAB and R analysis workflows; physics-based modelling and signal processing.
+- PhD not completed: left voluntarily to move into the energy sector. ICFO issued a Certificate of Advanced Training in Photonics (May 2025). Present as research training, not a completed PhD.
 
 ## October 2026-Present: Senior Battery Analytics Engineer
 - AYK Energy, Zhuhai, China.

@@ -192,13 +192,23 @@ Optics, Spectroscopy, Biomedical Instrumentation, Signal Processing
 
 # Education
 
-## PhD Research / Marie Skłodowska-Curie FLIGHT Fellow
+## PhD Trainee, Medical Optics Group / Marie Skłodowska-Curie FLIGHT Fellow
 
 ### Institute of Photonic Sciences (ICFO), Barcelona, Spain
 
-**2023 – 2025**
+**24 July 2023 – 31 January 2025**
 
-**Status:** PhD research period / former Marie Skłodowska-Curie FLIGHT Fellow. Do not present as a completed PhD.
+**Status:** PhD student in the PhD in Photonics programme (ICFO / UPC), Medical Optics group led by Prof. Turgut Durduran. The PhD was not completed: Dibya chose to leave and move into the energy sector to diversify his experience. Do not present as a completed PhD.
+
+**Certification:** ICFO Certificate of Advanced Training in Photonics (issued May 2025) and an ICFO letter certifying the PhD-student period. Never publish the certificate images or any passport/NIE numbers they contain.
+
+#### What he did
+
+* Trained in diffuse optics and photon transport in biological tissue, on laser- and ultrasound-based measurement systems.
+* Data acquisition with diffuse correlation spectroscopy (DCS) and time-resolved spectroscopy (TRS).
+* Built data processing and analysis workflows in MATLAB and R for multi-dimensional optical measurements.
+* Contributed to the LUCA project: a point-of-care, low-cost multimodal (laser + ultrasound) device for thyroid nodule screening, with Hospital Clínic Barcelona.
+* Courses and events: Basic Python, Good clinical practice, Essential transferable skills, BMPN Annual Meeting (photonics for paediatrics), PHAST-ETN (photonics for healthcare), CLP Day (photonic chips for information and quantum applications).
 
 #### Research Focus
 
