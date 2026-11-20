@@ -17,6 +17,26 @@
   --text-light: color-mix(in oklab, var(--text) 56%, transparent);
   --line: color-mix(in oklab, var(--text) 12%, transparent);
   --bezier-fastout-slowin: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Instrument screens (signal portrait) stay dark in both themes. */
+  --scope: oklch(16.5% 0.006 250);
+  --scope-trace: oklch(84.42% 0.19 202.24);
+}
+
+/* Light theme: same structure, inverted surfaces, deeper accents for contrast. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: oklch(96.6% 0.004 250);
+  --background-light: oklch(98.8% 0.002 250);
+  --background-raised: oklch(93.2% 0.006 250);
+  --primary: oklch(55% 0.12 218);
+  --gold: oklch(58% 0.125 68);
+  --text: oklch(19% 0.012 250);
+}
+
+/* Brief cross-fade when the theme is switched (class set by the toggle). */
+:root.theme-switching,
+:root.theme-switching * {
+  transition: background-color 400ms ease, color 400ms ease, border-color 400ms ease, fill 400ms ease, stroke 400ms ease !important;
 }
 
 @theme inline {
@@ -143,6 +163,10 @@ body {
 
 .hero-hologram {
   filter: drop-shadow(0 24px 90px rgba(34, 211, 238, 0.12));
+}
+
+:root[data-theme="light"] .hero-hologram {
+  filter: saturate(1.3) brightness(0.72) contrast(1.15) drop-shadow(0 24px 60px rgba(14, 116, 144, 0.18));
 }
 
 .hero-hologram__aura {

@@ -89,6 +89,7 @@ export const sideProjects: SideProject[] = [
     summary:
       "A family of fast, static calculator sites built on one Astro setup: battery sizing, roof pitch, freight-class density estimates, overtime tax and text-case conversion.",
     stack: ["Astro", "SEO", "Static"],
+    liveUrl: "https://batterycalculators.com/",
     related: [
       { repo: "theroofpitchcalculator.com", label: "Roof pitch" },
       { repo: "Freight-Class-Estimator", label: "Freight class" },

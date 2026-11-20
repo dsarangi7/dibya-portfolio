@@ -24,7 +24,7 @@ export default function ProjectDetailLayout({
           <h1 className="mt-4 text-4xl font-medium tracking-tight text-title sm:text-6xl">
             {title}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{description}</p>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-body">{description}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <Link
               href="/"
@@ -33,7 +33,7 @@ export default function ProjectDetailLayout({
             >
               ← Back to home
             </Link>
-            <p className="max-w-2xl text-sm leading-6 text-slate-400">{note}</p>
+            <p className="max-w-2xl text-sm leading-6 text-muted">{note}</p>
           </div>
         </section>
 

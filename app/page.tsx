@@ -8,18 +8,18 @@ import { ToolkitSection } from "@/app/components/toolkit-section";
 import { Footer } from "@/app/components/footer";
 
 export const metadata: Metadata = {
-  title: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
+  title: "Dibya Jyoti Sarangi | Senior Battery Analytics Engineer",
   description:
-    "Battery R&D engineer working on marine lithium-ion systems, battery analytics and engineering AI, with a physics and biomedical photonics research background.",
+    "Senior battery analytics engineer working on marine lithium-ion systems, battery analytics and engineering AI, with a physics and biomedical photonics research background.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     url: "/",
-    title: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
+    title: "Dibya Jyoti Sarangi | Senior Battery Analytics Engineer",
     description:
-      "Battery R&D engineer working on marine lithium-ion systems, battery analytics and engineering AI, with a physics and biomedical photonics research background.",
+      "Senior battery analytics engineer working on marine lithium-ion systems, battery analytics and engineering AI, with a physics and biomedical photonics research background.",
   },
 };
 

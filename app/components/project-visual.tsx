@@ -11,8 +11,8 @@ import { fastOutSlowIn } from "@/app/components/motion/reveal";
 
 const CYAN = "var(--primary)";
 const GOLD = "var(--gold)";
-const DIM = "color-mix(in oklab, white 22%, transparent)";
-const FAINT = "color-mix(in oklab, white 8%, transparent)";
+const DIM = "color-mix(in oklab, var(--text) 30%, transparent)";
+const FAINT = "color-mix(in oklab, var(--text) 10%, transparent)";
 
 function Draw({ delay = 0, duration = 1.4, ...props }: SVGMotionProps<SVGPathElement> & { delay?: number; duration?: number }) {
   return (

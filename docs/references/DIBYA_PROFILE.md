@@ -4,7 +4,7 @@ Name:
 Dibya Jyoti Sarangi
 
 Current role:
-Battery R&D Engineer / Marine Battery Engineer.
+Senior Battery Analytics Engineer (since October 2026), previously Battery R&D Engineer / Marine Battery Engineer.
 
 Core identity:
 Battery R&D Engineer working on marine lithium-ion battery systems, battery analytics, intelligent diagnostics, engineering AI, and workflow software, strengthened by a rare physics, optics, and research foundation.
@@ -25,4 +25,4 @@ Main strengths:
 - Scientific research mindset
 
 Positioning:
-Dibya should be positioned first as a Battery R&D Engineer / Marine Battery Engineer today. Physics, applied optics, photonics, and biomedical research are the scientific foundation that strengthen his current battery engineering, analytics, diagnostics, and AI systems work.
+Dibya should be positioned first as a Senior Battery Analytics Engineer in marine battery systems today. Physics, applied optics, photonics, and biomedical research are the scientific foundation that strengthen his current battery engineering, analytics, diagnostics, and AI systems work.

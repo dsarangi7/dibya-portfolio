@@ -8,6 +8,7 @@
  */
 import { useReducedMotion, useSpring } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useTheme } from "@/app/lib/theme";
 import {
   Color,
   Mesh,
@@ -78,6 +79,7 @@ void main(){
 const fragmentShader = /* glsl */ `
 uniform vec3 tint;
 uniform vec3 lightDir;
+uniform float lightMode;
 varying vec2 vUv;
 varying float vNoise;
 varying vec3 vNormal;
@@ -86,7 +88,11 @@ void main(){
   vec3 base = cos(vec3(c.b * 1.5, c.r, c.r) * vNoise * 3.0);
   float diffuse = max(dot(normalize(vNormal), normalize(lightDir)), 0.0);
   vec3 lit = base * (0.18 + 0.9 * diffuse);
-  gl_FragColor = vec4(mix(lit, lit * tint, 0.4) * 0.42, 1.0);
+  vec3 darkCol = mix(lit, lit * tint, 0.4) * 0.42;
+  // Light theme: a pale porcelain sphere with soft teal shading.
+  float v = clamp(dot(lit, vec3(0.333)), 0.0, 1.0);
+  vec3 lightCol = mix(vec3(0.985, 0.988, 0.992), vec3(0.62, 0.78, 0.84), v * 0.75);
+  gl_FragColor = vec4(mix(darkCol, lightCol, lightMode), 1.0);
 }`;
 
 const springConfig = { stiffness: 30, damping: 20, mass: 2 };
@@ -97,6 +103,18 @@ export function DisplacementSphere({ className = "" }: { className?: string }) {
   const rotationX = useSpring(0, springConfig);
   const rotationY = useSpring(0, springConfig);
   const [visible, setVisible] = useState(false);
+  const theme = useTheme();
+  const themeRef = useRef(theme);
+  const materialRef = useRef<ShaderMaterial | null>(null);
+  const renderRef = useRef<(() => void) | null>(null);
+
+  useEffect(() => {
+    themeRef.current = theme;
+    if (materialRef.current) {
+      materialRef.current.uniforms.lightMode.value = theme === "light" ? 1 : 0;
+      renderRef.current?.();
+    }
+  }, [theme]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -127,8 +145,11 @@ export function DisplacementSphere({ className = "" }: { className?: string }) {
         time: { value: 0 },
         tint: { value: new Color("#5fe3ff") },
         lightDir: { value: new Vector3(1, 1, 2) },
+        lightMode: { value: themeRef.current === "light" ? 1 : 0 },
       },
     });
+    materialRef.current = material;
+    renderRef.current = () => renderer.render(scene, camera);
     const geometry = new SphereGeometry(32, 128, 128);
     const sphere = new Mesh(geometry, material);
     scene.add(sphere);
@@ -184,6 +205,8 @@ export function DisplacementSphere({ className = "" }: { className?: string }) {
       observer.disconnect();
       window.removeEventListener("resize", resize);
       window.removeEventListener("pointermove", onPointerMove);
+      materialRef.current = null;
+      renderRef.current = null;
       geometry.dispose();
       material.dispose();
       renderer.dispose();

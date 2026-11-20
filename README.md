@@ -1,6 +1,6 @@
 # Dibya Jyoti Sarangi Portfolio
 
-A premium recruiter-facing engineering portfolio for Dibya Jyoti Sarangi. The site presents Dibya as a Battery R&D Engineer / Marine Battery Engineer building marine battery analytics, telemetry diagnostics, AI-enabled engineering workflows, and product-minded systems on a physics and research foundation.
+A premium recruiter-facing engineering portfolio for Dibya Jyoti Sarangi. The site presents Dibya as a Senior Battery Analytics Engineer in marine battery systems, building marine battery analytics, telemetry diagnostics, AI-enabled engineering workflows, and product-minded systems on a physics and research foundation.
 
 The portfolio is intentionally sanitized. It does not include confidential AYK data, proprietary source code, private documents, customer information, credentials, or internal screenshots.
 

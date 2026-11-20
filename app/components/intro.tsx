@@ -75,7 +75,7 @@ export function Intro() {
 
         <h2 className="text-[clamp(3rem,10vw,7.5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-title">
           <span className="sr-only">
-            {heroCopy.titleLead} engineer: {disciplines.join(", ")}
+            Senior battery analytics engineer: {disciplines.join(", ")}
           </span>
           <span aria-hidden className="flex items-center">
             <span className="wipe-word" style={{ "--wipe-delay": "0.2s" } as CSSProperties}>

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-19 (Light theme, new role, live calculators link)
+- Added a light theme with an animated moon/sun toggle in the nav rail and mobile bar (interaction after Hamish Williams' ThemeToggle, MIT). Dark stays the default; the choice persists and is applied before first paint.
+- Light tokens for surfaces, text and deeper cyan/gold accents; the WebGL sphere renders as pale porcelain in light mode; the hero hologram is toned for light backgrounds; project schematics use text-based line colours; the signal-portrait screen stays dark in both themes.
+- Updated role to Senior Battery Analytics Engineer (since October 2026) across hero, story, timeline, metadata, README and `docs/references`.
+- Lab: the calculator-sites card now links to the live site, batterycalculators.com.
+
 ## 2026-11-19 (Signal-acquisition portrait)
 - Story section now pins on desktop while a scroll-driven "signal acquisition" scene plays: flat cell-voltage-style traces draw in, lock onto the portrait as a brightness-modulated raster, and a gold scan line hands over to a cyan-graded photo (HUD reads ARMED → ACQUIRING → RESOLVING → LOCKED).
 - The portrait is sampled on the client into a subject-masked luminance grid (colour distance from the border plus a low-saturation wall test, unsharp mask, contrast stretch); canvas 2D only, no WebGL, and drawing stops when off screen.

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/app/components/navbar";
 import { Providers } from "@/app/components/providers";
 import { siteUrl } from "@/app/lib/site";
+import { themeInitScript } from "@/app/lib/theme-script";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 const code = JetBrains_Mono({ subsets: ["latin"], variable: "--font-code", display: "swap" });
@@ -11,16 +12,17 @@ const code = JetBrains_Mono({ subsets: ["latin"], variable: "--font-code", displ
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   title: {
-    default: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
+    default: "Dibya Jyoti Sarangi | Senior Battery Analytics Engineer",
     template: "%s",
   },
   description:
-    "Portfolio homepage for Dibya Jyoti Sarangi, a Battery R&D Engineer focused on marine battery systems, battery analytics, intelligent diagnostics, and AI engineering systems.",
+    "Portfolio homepage for Dibya Jyoti Sarangi, a Senior Battery Analytics Engineer focused on marine battery systems, battery analytics, intelligent diagnostics, and AI engineering systems.",
   applicationName: "Dibya Jyoti Sarangi Portfolio",
   authors: [{ name: "Dibya Jyoti Sarangi" }],
   creator: "Dibya Jyoti Sarangi",
   keywords: [
     "Dibya Jyoti Sarangi",
+    "Senior Battery Analytics Engineer",
     "Battery R&D Engineer",
     "Marine Battery Engineer",
     "marine battery analytics",
@@ -36,13 +38,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Dibya Jyoti Sarangi Portfolio",
-    title: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
+    title: "Dibya Jyoti Sarangi | Senior Battery Analytics Engineer",
     description:
       "Recruiter-facing engineering portfolio centered on marine battery R&D, battery analytics, intelligent diagnostics, AI engineering systems, and a physics research foundation.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dibya Jyoti Sarangi | Battery R&D Engineer Portfolio",
+    title: "Dibya Jyoti Sarangi | Senior Battery Analytics Engineer",
     description:
       "Marine battery R&D, battery analytics, intelligent diagnostics, AI engineering systems, and a physics-trained engineering foundation.",
   },
@@ -58,7 +60,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${display.variable} ${code.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      data-theme="dark"
+      suppressHydrationWarning
+      className={`${display.variable} ${code.variable} h-full antialiased`}
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-full">
         <a
           href="#work"

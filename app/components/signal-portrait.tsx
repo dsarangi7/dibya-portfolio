@@ -157,8 +157,9 @@ export function SignalPortrait({ progress }: { progress: MotionValue<number> }) 
     const ctx = canvas?.getContext("2d");
     if (!canvas || !frame || !ctx) return;
 
+    // The scope screen is dark in both themes, so the trace colour is fixed.
     const styles = getComputedStyle(document.documentElement);
-    const cyan = styles.getPropertyValue("--primary").trim() || "#5fe3ff";
+    const cyan = styles.getPropertyValue("--scope-trace").trim() || "#5fe3ff";
     let grid: Float32Array | null = null;
     const img = new window.Image();
     img.src = SRC;
@@ -261,7 +262,7 @@ export function SignalPortrait({ progress }: { progress: MotionValue<number> }) 
 
   return (
     <figure className="relative mx-auto w-full max-w-[520px]">
-      <div ref={frameRef} className="relative aspect-square overflow-hidden border border-line bg-bg-light/60">
+      <div ref={frameRef} className="relative aspect-square overflow-hidden border border-line bg-[var(--scope)]">
         {/* Graded photo, revealed above the scan line */}
         <motion.div className="absolute inset-0" style={reduce ? undefined : { clipPath: photoClip }}>
           <Image
@@ -272,9 +273,9 @@ export function SignalPortrait({ progress }: { progress: MotionValue<number> }) 
             className="object-cover grayscale-[0.85] contrast-[1.08] brightness-[0.82]"
             priority={false}
           />
-          <div aria-hidden className="absolute inset-0 bg-primary/25 mix-blend-color" />
-          <div aria-hidden className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_35%,transparent_45%,var(--background)_100%)] opacity-70" />
-          <div aria-hidden className="absolute inset-0 bg-[repeating-linear-gradient(to_bottom,transparent_0_3px,color-mix(in_oklab,var(--background)_35%,transparent)_3px_4px)]" />
+          <div aria-hidden className="absolute inset-0 bg-[color-mix(in_oklab,var(--scope-trace)_25%,transparent)] mix-blend-color" />
+          <div aria-hidden className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_35%,transparent_45%,var(--scope)_100%)] opacity-70" />
+          <div aria-hidden className="absolute inset-0 bg-[repeating-linear-gradient(to_bottom,transparent_0_3px,color-mix(in_oklab,var(--scope)_35%,transparent)_3px_4px)]" />
         </motion.div>
 
         {!reduce && <canvas ref={canvasRef} aria-hidden className="absolute inset-0 h-full w-full" />}

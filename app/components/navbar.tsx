@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { DjsMonogram } from "@/app/components/visual-system";
 import { githubProfileUrl } from "@/app/lib/side-projects";
 import { fastOutSlowIn } from "@/app/components/motion/reveal";
+import { ThemeToggle } from "@/app/components/theme-toggle";
 
 export const navLinks = [
   { label: "Work", href: "/#work" },
@@ -113,7 +114,10 @@ export function Navbar() {
               );
             })}
           </div>
-          <SocialIcons className="flex-col" />
+          <div className="flex flex-col items-center">
+            <ThemeToggle />
+            <SocialIcons className="flex-col" />
+          </div>
         </nav>
       </div>
 
@@ -122,6 +126,8 @@ export function Navbar() {
         <Link href="/" aria-label="Dibya Jyoti Sarangi, home">
           <DjsMonogram className="h-9 w-9" title="DJS" />
         </Link>
+        <div className="flex items-center">
+        <ThemeToggle className="relative z-10" />
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -140,6 +146,7 @@ export function Navbar() {
             }`}
           />
         </button>
+        </div>
       </div>
 
       <AnimatePresence>

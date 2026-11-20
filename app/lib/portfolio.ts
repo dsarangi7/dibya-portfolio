@@ -11,17 +11,17 @@ export type ProjectCard = {
 
 export const heroCopy = {
   name: "Dibya Jyoti Sarangi",
-  role: "Battery R&D Engineer — Marine Battery Systems, Analytics & Engineering AI",
+  role: "Senior Battery Analytics Engineer — Marine Battery Systems, Analytics & Engineering AI",
   headline:
-    "Marine Battery R&D Engineer building intelligent battery analytics, telemetry diagnostics, and AI-powered engineering systems with a physics and research foundation.",
+    "Senior Battery Analytics Engineer building intelligent battery analytics, telemetry diagnostics, and AI-powered engineering systems with a physics and research foundation.",
   highlights: [
     "Marine battery analytics",
     "Intelligent diagnostics",
     "AI-assisted engineering systems",
   ],
   /** Hero: fixed first word + rotating disciplines (Hamish-style). */
-  titleLead: "Battery R&D",
-  disciplines: ["Analytics", "Engineering AI", "Physics", "Product"],
+  titleLead: "Battery",
+  disciplines: ["Analytics", "Engineering AI", "R&D", "Physics"],
   tagline:
     "I work on marine lithium-ion battery systems and build the analytics and AI tools around them. Before that, I measured light in tissue.",
 };
@@ -31,7 +31,7 @@ export const story = {
   greeting: "Hi, I'm Dibya",
   paragraphs: [
     "I trained as a physicist. I studied applied optics at IIT Delhi, where I received the Dr. Shankar Dayal Sharma Gold Medal, then did PhD research in biomedical photonics at ICFO Barcelona as a Marie Skłodowska-Curie FLIGHT fellow, measuring light in living tissue with time-domain and diffuse correlation spectroscopy.",
-    "In January 2025 I moved into marine battery R&D. The instruments changed, but the problem is familiar: noisy signals, careful baselines, and results an engineer has to be able to trust. I work on telemetry diagnostics, parameter estimation and anomaly review for marine lithium-ion systems, and on the software teams actually adopt. One example: moving a 30-engineer R&D team from Excel to a governed BOM and change-control workflow.",
+    "In January 2025 I moved into marine battery R&D, and since October 2026 I have been the Senior Battery Analytics Engineer. The instruments changed, but the problem is familiar: noisy signals, careful baselines, and results an engineer has to be able to trust. I work on telemetry diagnostics, parameter estimation and anomaly review for marine lithium-ion systems, and on the software teams actually adopt. One example: moving a 30-engineer R&D team from Excel to a governed BOM and change-control workflow.",
     "Outside work I keep building, mostly in public: a fleet battery analytics platform, an EKF state-of-charge model, a speaking-practice app that runs Whisper in the browser, and a small pixel office where my AI agents work. You'll find them in the lab below.",
   ],
 };
@@ -48,7 +48,8 @@ export const timeline: TimelineItem[] = [
   { years: "2016–18", title: "M.Sc. Applied Physics", place: "IGIT Sarang" },
   { years: "2021–23", title: "M.Tech Applied Optics & Physics · Gold Medal", place: "IIT Delhi" },
   { years: "2023–25", title: "PhD research, MSCA FLIGHT Fellow", place: "ICFO Barcelona" },
-  { years: "2025–", title: "R&D Engineer, Marine Battery Systems", place: "AYK Energy", current: true },
+  { years: "2025–26", title: "R&D Engineer, Marine Battery Systems", place: "AYK Energy" },
+  { years: "2026–", title: "Senior Battery Analytics Engineer", place: "AYK Energy", current: true },
 ];
 
 export const toolkit: { heading: string; items: string[] }[] = [

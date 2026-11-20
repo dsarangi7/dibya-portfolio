@@ -67,3 +67,8 @@
 - [x] Add portrait asset and scroll-driven signal-trace portrait scene in Story
 - [x] Pin the scene on desktop, scroll-scrub on mobile, reduced-motion fallback
 - [ ] Replace the 400px portrait with a higher-resolution original (1200px or larger)
+
+## Phase 6 (Theme and role update)
+- [x] Light/dark theme toggle with persisted choice and no-flash init
+- [x] Update role to Senior Battery Analytics Engineer (October 2026)
+- [x] Link batterycalculators.com live site from the Lab

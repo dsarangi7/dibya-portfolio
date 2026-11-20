@@ -12,7 +12,7 @@
 
 # Professional Summary
 
-Battery R&D Engineer / Marine Battery Engineer with a multidisciplinary background spanning marine lithium-ion battery systems, battery analytics, applied physics, artificial intelligence, data science, and industrial engineering software. Experienced in developing analytical frameworks, telemetry-driven diagnostics, anomaly detection systems, parameter estimation workflows, battery health monitoring concepts, and AI-powered engineering tools for lithium-ion marine battery systems.
+Senior Battery Analytics Engineer (marine battery systems) with a multidisciplinary background spanning marine lithium-ion battery systems, battery analytics, applied physics, artificial intelligence, data science, and industrial engineering software. Experienced in developing analytical frameworks, telemetry-driven diagnostics, anomaly detection systems, parameter estimation workflows, battery health monitoring concepts, and AI-powered engineering tools for lithium-ion marine battery systems.
 
 Combines hands-on battery engineering execution with research-grade analytical rigor developed through applied physics, optics, and biomedical photonics research. Skilled in translating complex battery and engineering workflow challenges into public-safe software, data, and AI-driven systems.
 
@@ -82,11 +82,17 @@ Combines hands-on battery engineering execution with research-grade analytical r
 
 # Professional Experience
 
+## Senior Battery Analytics Engineer
+
+### AYK Energy, Zhuhai, China
+
+**October 2026 – Present**
+
 ## R&D Engineer
 
 ### AYK Energy, Zhuhai, China
 
-**January 2025 – Present**
+**January 2025 – October 2026**
 
 #### Responsibilities
 

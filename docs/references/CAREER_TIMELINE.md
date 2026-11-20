@@ -18,9 +18,13 @@
 - Former Marie Sklodowska-Curie FLIGHT Fellow working in biomedical photonics and medical optics research.
 - PhD research period was not completed; present this as research experience, not as a completed PhD.
 
-## January 2025-Present: R&D Engineer
+## October 2026-Present: Senior Battery Analytics Engineer
 - AYK Energy, Zhuhai, China.
-- Current professional identity: Battery R&D Engineer / Marine Battery Engineer.
+- Current professional identity: Senior Battery Analytics Engineer (marine lithium-ion battery systems).
+
+## January 2025-October 2026: R&D Engineer
+- AYK Energy, Zhuhai, China.
+- Professional identity in this period: Battery R&D Engineer / Marine Battery Engineer.
 - Focused on marine lithium-ion battery systems, battery analytics, telemetry diagnostics, parameter estimation, anomaly detection, battery health monitoring, engineering AI, and internal engineering workflow intelligence.
 
 ## Future Direction
