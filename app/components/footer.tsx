@@ -42,6 +42,9 @@ export function Footer() {
           <a href={githubProfileUrl} target="_blank" rel="noopener noreferrer" className="accent-link text-lg text-body">
             GitHub
           </a>
+          <a href="https://batterycalculators.com/" target="_blank" rel="noopener noreferrer" className="accent-link text-lg text-body">
+            Battery Calculators
+          </a>
         </Reveal>
       </Shell>
 

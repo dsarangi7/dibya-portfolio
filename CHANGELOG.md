@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-20 (Deployment: Vercel and GitHub Pages)
+- Merged main's Engineering Operating System work into the redesign: the EOS is now featured project 01, its sanitized dashboard image sits in the case study (restyled to the new tokens), and the contact section links Battery Calculators.
+- Added a GitHub Actions workflow that builds a static export (basePath `/dibya-portfolio`) and publishes it to GitHub Pages on every push to main; Vercel keeps the full Next.js build.
+- Public assets resolve through an `asset()` helper so they work under the Pages base path; robots and sitemap are force-static.
+
 ## 2026-11-20 (Photon migration animation)
 - Replaced the static optics schematic on the research case study with a live, original photon-migration animation: a 2D Monte Carlo random walk (reduced scattering 1/mm, absorption 0.006/mm) where one photon scatters its way to the first detector, then a Web Worker simulates hundreds of thousands more so the banana-shaped path-density maps for 1, 2 and 3 cm separations emerge from the physics.
 - Mean photon paths and a penetration-depth marker are drawn over the bananas; moving red blood cells flash when a photon scatters off them; TRS (time-of-flight) and DCS (g2) insets fill from the same simulation.
@@ -39,6 +44,8 @@
 - Added `THIRD_PARTY_NOTICES.md` with the MIT notices; footer credits the original design.
 
 ## 2026-11-10 (BOM Engineering Workspace)
+- Featured the Engineering Operating System in the homepage hero and placed it first in the projects grid.
+- Added a sanitized dashboard image to show the workspace’s item master and BOM tools.
 - Added a featured case study about the R&D engineering team’s move from Excel to a governed platform for BOMs, part revisions, ECNs, and ERP handoffs.
 
 ## 2026-06-02 (Deployment readiness audit)

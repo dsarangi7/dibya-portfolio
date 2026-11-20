@@ -1,5 +1,7 @@
 import ProjectDetailLayout from "@/app/components/project-detail-layout";
 import type { Metadata } from "next";
+import Image from "next/image";
+import workspacePreview from "@/public/engineering-os-workspace.png";
 
 const title = "BOM Engineering Workspace";
 const description =
@@ -46,6 +48,21 @@ export default function BomEngineeringWorkspacePage() {
       description={description}
       note="A 30-engineer R&D team processed about 1,000 governed approvals on one BOM and ECN platform in 16 weeks (21 July–10 November 2026)."
     >
+      <figure className="overflow-hidden border border-line bg-bg-light/50">
+        <a href="https://engineering-operating-system-demo.vercel.app/" aria-label="Open the Engineering Operating System demo" className="block">
+          <Image
+            src={workspacePreview}
+            alt="Engineering Operating System workspace with item search, item master governance, and BOM conversion and comparison tools"
+            className="h-auto w-full"
+            sizes="(min-width: 1280px) 1152px, 100vw"
+          />
+        </a>
+        <figcaption className="border-t border-line px-6 py-4 text-sm leading-6 text-body">
+          Sanitized recreation of the Engineering Operating System dashboard. Engineers can search the item master,
+          compare BOMs, and roll up part quantities from the same workspace. Select the image to open the live demo.
+        </figcaption>
+      </figure>
+
       <div className="grid gap-6 lg:grid-cols-2">
         {sections.map((section) => (
           <section

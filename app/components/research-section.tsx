@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Shell, SectionHeading } from "@/app/components/section-shell";
 import { Reveal } from "@/app/components/motion/reveal";
 import { ArrowRight } from "@/app/components/project-summary";
+import { asset } from "@/app/lib/asset";
 
 const publications = [
   {
@@ -78,14 +79,14 @@ export function ResearchSection() {
       <div className="grid gap-10 md:grid-cols-2">
         <Reveal>
           <Film
-            src="/msca-interview.mp4"
+            src={asset("/msca-interview.mp4")}
             label="ICFO FLIGHT fellowship research interview"
             caption="MSCA FLIGHT fellowship feature: Medical Optics group, ICFO Barcelona."
           />
         </Reveal>
         <Reveal delay={0.15}>
           <Film
-            src="/IITD%20gold%20medal.MP4"
+            src={asset("/IITD%20gold%20medal.MP4")}
             label="IIT Delhi Dr. Shankar Dayal Sharma Gold Medal announcement"
             caption="IIT Delhi: Dr. Shankar Dayal Sharma Gold Medal announcement."
           />

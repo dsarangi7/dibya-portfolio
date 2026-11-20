@@ -52,9 +52,12 @@
 - [x] Rewrite homepage story in first person; merge journey, research, and video spotlights
 - [ ] Review first-person story copy and Lab project selection
 - [ ] Decide whether the public WireFlow repo should stay public (describes employer-internal tooling)
+- [x] Highlight the Engineering Operating System in the homepage hero
+- [x] Add a sanitized Engineering Operating System dashboard image
 - [ ] Add chatbot concept
 - [ ] Add downloadable CV
-- [ ] Deploy to Vercel
+- [x] Deploy to Vercel
+- [x] Deploy to GitHub Pages via GitHub Actions
 
 ## Maintenance
 - [x] Reorganize portfolio knowledge files into `docs/references` (moved: `CAREER_TIMELINE.md`, `CV_MASTER.md`, `DESIGN_SYSTEM.md`, `DIBYA_PROFILE.md`, `PROJECTS.md`, `PROJECT_BRIEF.md`, `SECURITY_RULES.md`)

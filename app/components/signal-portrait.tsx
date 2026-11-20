@@ -12,6 +12,7 @@
  */
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { asset } from "@/app/lib/asset";
 import {
   motion,
   useMotionValueEvent,
@@ -23,7 +24,7 @@ import {
 const ROWS = 90;
 const COLS = 160;
 const BUCKETS = 12;
-const SRC = "/images/dibya-portrait.png";
+const SRC = asset("/images/dibya-portrait.png");
 
 const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
 const phase = (p: number, a: number, b: number) => clamp01((p - a) / (b - a));

@@ -103,7 +103,18 @@ export const profileSummary = {
   ],
 };
 
+export const engineeringOperatingSystem: ProjectCard = {
+  title: "BOM Engineering Workspace",
+  subtitle: "Engineering Operating System",
+  summary:
+    "Moved a 30-engineer R&D team from Excel to one BOM and ECN platform that handled about 1,000 governed approvals in 16 weeks.",
+  tags: ["BOM Intelligence", "Change Control", "ERP"],
+  link: "/projects/bom-engineering-workspace",
+  visual: "bom",
+};
+
 export const featuredProjects: ProjectCard[] = [
+  engineeringOperatingSystem,
   {
     title: "Battery Analytics & Intelligent Diagnostics",
     subtitle: "Telemetry-driven battery diagnostics",
@@ -122,15 +133,6 @@ export const featuredProjects: ProjectCard[] = [
     stack: "Next.js · TypeScript · Plotly · FastAPI · pandas · NumPy · SciPy · python-docx",
     link: "/projects/soh-calculator",
     visual: "soh",
-  },
-  {
-    title: "BOM Engineering Workspace",
-    subtitle: "Engineering Operating System",
-    summary:
-      "Moved a 30-engineer R&D team from Excel to one BOM and ECN platform that handled about 1,000 governed approvals in 16 weeks.",
-    tags: ["BOM Intelligence", "Change Control", "ERP"],
-    link: "/projects/bom-engineering-workspace",
-    visual: "bom",
   },
   {
     title: "AI Engineering Assistant",
