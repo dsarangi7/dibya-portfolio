@@ -7,6 +7,8 @@ export const siteUrl = new URL(siteOrigin);
 export const siteRoutes = [
   "/",
   "/projects/battery-analytics",
+  "/projects/soh-calculator",
+  "/projects/bom-engineering-workspace",
   "/projects/ai-engineering-assistant",
   "/projects/multimodal-spectroscopic-systems",
 ];

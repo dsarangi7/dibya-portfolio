@@ -70,6 +70,11 @@ export function ProjectSummary({ project, index }: { project: ProjectCard; index
               </li>
             ))}
           </motion.ul>
+          {project.stack && (
+            <motion.p {...item(0.65)} className="-mt-6 mb-10 font-mono text-xs leading-relaxed text-muted">
+              <span className="text-primary">Stack</span> · {project.stack}
+            </motion.p>
+          )}
           <motion.div {...item(0.7)}>
             <Link
               href={project.link}

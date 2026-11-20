@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-20 (SOH Calculator case study)
+- Added SOH Calculator as featured project 02, with a new animated schematic (charge window → OCV–SOC lookup → per-cell SOH bars → report) and an optional stack line on project cards.
+- New case study at `/projects/soh-calculator`: problem, outcome (about a week of manual work → minutes), the capacity-based SOH method as seven steps, and the tech stack.
+- Sanitized: no calculation constants, cell data, project codes, customer names, or server details; all plotted values are synthetic.
+- Added the SOH and BOM case studies to the sitemap.
+
 ## 2026-11-19 (Light theme, new role, live calculators link)
 - Added a light theme with an animated moon/sun toggle in the nav rail and mobile bar (interaction after Hamish Williams' ThemeToggle, MIT). Dark stays the default; the choice persists and is applied before first paint.
 - Light tokens for surfaces, text and deeper cyan/gold accents; the WebGL sphere renders as pale porcelain in light mode; the hero hologram is toned for light backgrounds; project schematics use text-based line colours; the signal-portrait screen stays dark in both themes.

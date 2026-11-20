@@ -11,7 +11,7 @@ export function WorkSection() {
         index="01"
         label="Selected work"
         title="Signals, systems, tools"
-        intro="Four case studies, from battery telemetry to the research behind it. Company work is described at summary level only, with no internal data."
+        intro="Five case studies, from battery telemetry to the research behind it. Company work is described at summary level only, with no internal data."
       />
       {featuredProjects.map((project, index) => (
         <ProjectSummary key={project.link} project={project} index={index} />

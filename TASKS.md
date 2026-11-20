@@ -72,3 +72,7 @@
 - [x] Light/dark theme toggle with persisted choice and no-flash init
 - [x] Update role to Senior Battery Analytics Engineer (October 2026)
 - [x] Link batterycalculators.com live site from the Lab
+
+## Phase 7 (SOH Calculator case study)
+- [x] Add sanitized SOH Calculator card, schematic, and case study page
+- [x] Add case study routes to the sitemap

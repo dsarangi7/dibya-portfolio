@@ -1,10 +1,11 @@
-export type ProjectVisualKind = "battery" | "bom" | "rag" | "optics";
+export type ProjectVisualKind = "battery" | "soh" | "bom" | "rag" | "optics";
 
 export type ProjectCard = {
   title: string;
   subtitle: string;
   summary: string;
   tags: string[];
+  stack?: string;
   link: string;
   visual: ProjectVisualKind;
 };
@@ -111,6 +112,16 @@ export const featuredProjects: ProjectCard[] = [
     tags: ["Battery Analytics", "Diagnostics", "Marine Systems"],
     link: "/projects/battery-analytics",
     visual: "battery",
+  },
+  {
+    title: "SOH Calculator",
+    subtitle: "Battery health, from raw logs to customer report",
+    summary:
+      "Turned a week of manual, script-by-script state-of-health analysis into minutes. Upload a project folder and it finds the test windows, estimates per-cell SOH, and writes the customer report.",
+    tags: ["Coulomb Counting", "C-rate OCV–SOC LUT", "Temperature Correction", "Auto Reporting"],
+    stack: "Next.js · TypeScript · Plotly · FastAPI · pandas · NumPy · SciPy · python-docx",
+    link: "/projects/soh-calculator",
+    visual: "soh",
   },
   {
     title: "BOM Engineering Workspace",

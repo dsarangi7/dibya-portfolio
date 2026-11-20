@@ -81,6 +81,67 @@ function BatteryVisual() {
   );
 }
 
+/** Charge window → OCV–SOC lookup → per-cell SOH → report. All values synthetic. */
+function SohVisual() {
+  const bars = [0.93, 0.95, 0.91, 0.94, 0.96, 0.92, 0.84, 0.95, 0.93, 0.94, 0.9, 0.95];
+  return (
+    <>
+      <Label x={40} y={90}>CURRENT · SYNTHETIC</Label>
+      <line x1="40" x2="300" y1="200" y2="200" stroke={FAINT} />
+      <Pop delay={0.9}>
+        <rect x="96" y="112" width="160" height="128" fill="color-mix(in oklab, var(--gold) 8%, transparent)" stroke={GOLD} strokeOpacity="0.5" strokeDasharray="4 5" />
+      </Pop>
+      <Draw d="M40 200 H 90 L 98 140 H 252 L 260 200 H 300" stroke={CYAN} strokeWidth={2} delay={0.1} duration={1.2} />
+      <Pop delay={1.2}>
+        <Label x={176} y={260} colour={GOLD} anchor="middle">∫ I dt → Ah</Label>
+      </Pop>
+
+      <Label x={340} y={90}>OCV · SOC @ C-RATE</Label>
+      <line x1="340" x2="560" y1="240" y2="240" stroke={FAINT} />
+      <line x1="340" x2="340" y1="110" y2="240" stroke={FAINT} />
+      <Draw d="M340 232 C 360 190, 380 178, 420 170 S 500 158, 530 140 S 552 118, 560 112" stroke={CYAN} strokeWidth={2} delay={0.6} duration={1.2} />
+      <Draw d="M340 236 C 360 198, 380 186, 420 178 S 500 166, 530 148 S 552 126, 560 120" stroke={DIM} strokeWidth={1} strokeDasharray="3 4" delay={0.8} duration={1.2} />
+      <Pop delay={1.6}>
+        <circle cx="372" cy="186" r="5" fill={GOLD} />
+        <circle cx="530" cy="140" r="5" fill={GOLD} />
+      </Pop>
+      <Draw d="M372 256 H 530" stroke={GOLD} strokeWidth={1.5} delay={1.8} duration={0.6} />
+      <Pop delay={2}>
+        <Label x={451} y={276} colour={GOLD} anchor="middle">ΔSOC</Label>
+      </Pop>
+
+      <Label x={40} y={316}>CELL SOH → MODULE → STRING</Label>
+      <line x1="40" x2="440" y1="424" y2="424" stroke={FAINT} />
+      {bars.map((v, i) => {
+        const h = (v - 0.7) * 300;
+        const flagged = v < 0.88;
+        return (
+          <motion.rect
+            key={i}
+            x={46 + i * 32}
+            width="20"
+            fill={flagged ? GOLD : CYAN}
+            fillOpacity={flagged ? 1 : 0.55}
+            initial={{ height: 0, y: 424 }}
+            whileInView={{ height: h, y: 424 - h }}
+            viewport={{ once: true, margin: "0px 0px -15% 0px" }}
+            transition={{ duration: 0.7, delay: 2.2 + i * 0.05, ease: fastOutSlowIn }}
+          />
+        );
+      })}
+      <Draw d="M440 380 H 470" stroke={DIM} strokeWidth={1.5} delay={3} duration={0.4} />
+      <Pop delay={3.3}>
+        <path d="M478 340 H 528 L 548 360 V 424 H 478 Z" fill="var(--background)" stroke={CYAN} strokeWidth="2" />
+        <path d="M528 340 V 360 H 548" fill="none" stroke={CYAN} strokeWidth="1.5" />
+        {[376, 390, 404].map((y) => (
+          <line key={y} x1="490" x2="536" y1={y} y2={y} stroke={DIM} />
+        ))}
+        <Label x={513} y={446} colour={CYAN} anchor="middle">REPORT</Label>
+      </Pop>
+    </>
+  );
+}
+
 /** Assembly tree with a revision flowing through approval. */
 function BomVisual() {
   const parts = [100, 190, 280, 370, 460];
@@ -202,6 +263,7 @@ function OpticsVisual() {
 
 const visuals: Record<ProjectVisualKind, () => React.ReactElement> = {
   battery: BatteryVisual,
+  soh: SohVisual,
   bom: BomVisual,
   rag: RagVisual,
   optics: OpticsVisual,
@@ -209,6 +271,7 @@ const visuals: Record<ProjectVisualKind, () => React.ReactElement> = {
 
 const watermark: Record<ProjectVisualKind, string> = {
   battery: "V(t)",
+  soh: "SOH",
   bom: "ΔREV",
   rag: "∑ctx",
   optics: "hν",
