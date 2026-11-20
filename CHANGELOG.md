@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-20 (Mobile tap targets)
+- Checked every page at 375 px: no horizontal scroll, the menu and the photon animation adapt.
+- Lab card links ("Open live", "Source on GitHub", the GitHub profile link) now have a 44 px tap area, and the small "Also:" links 32 px, through an invisible `.tap-target` hit area, so the look is unchanged.
+
 ## 2026-11-20 (Deployment: Vercel and GitHub Pages)
 - Merged main's Engineering Operating System work into the redesign: the EOS is now featured project 01, its sanitized dashboard image sits in the case study (restyled to the new tokens), and the contact section links Battery Calculators.
 - Added a GitHub Actions workflow that builds a static export (basePath `/dibya-portfolio`) and publishes it to GitHub Pages on every push to main; Vercel keeps the full Next.js build.

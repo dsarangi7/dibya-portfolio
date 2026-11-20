@@ -85,3 +85,4 @@
 - [x] Rewrite the research case study with verified methods, project, and training
 - [x] Live photon-migration (banana) animation with TRS and DCS insets on the research case study
 - [ ] Optional: export a short video loop of the animation for LinkedIn
+- [x] Mobile pass at 375 px; enlarge lab link tap targets

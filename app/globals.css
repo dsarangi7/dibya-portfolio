@@ -143,6 +143,17 @@ body {
   color: var(--text-title);
 }
 
+/* Larger hit area for small text links without changing how they look. */
+.tap-target {
+  position: relative;
+}
+
+.tap-target::after {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--tap-y, 12px)) calc(-1 * var(--tap-x, 8px));
+}
+
 @keyframes scroll-dot {
   0% { transform: translate3d(-1px, 0, 0); opacity: 0; }
   20% { transform: translate3d(-1px, 0, 0); opacity: 1; }

@@ -45,11 +45,16 @@ function LabCard({ project, index }: { project: Project; index: number }) {
         ))}
       </ul>
       {project.related && (
-        <p className="mb-6 font-mono text-xs text-muted">
+        <p className="mb-6 font-mono text-xs leading-8 text-muted">
           Also:{" "}
           {project.related.map((rel, i) => (
             <span key={rel.repo}>
-              <a href={`https://github.com/${githubUser}/${rel.repo}`} target="_blank" rel="noopener noreferrer" className="accent-link text-body">
+              <a
+                href={`https://github.com/${githubUser}/${rel.repo}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="accent-link tap-target text-body [--tap-x:4px] [--tap-y:8px]"
+              >
                 {rel.label}
               </a>
               {i < project.related!.length - 1 && " · "}
@@ -59,12 +64,12 @@ function LabCard({ project, index }: { project: Project; index: number }) {
       )}
       <div className="flex flex-wrap gap-6 text-sm font-medium">
         {project.liveUrl && (
-          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="group/link inline-flex items-center gap-2 text-gold">
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="group/link tap-target inline-flex items-center gap-2 text-gold">
             Open live
             <ArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
           </a>
         )}
-        <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="accent-link text-body">
+        <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="accent-link tap-target text-body">
           Source on GitHub
         </a>
       </div>
@@ -108,7 +113,7 @@ export function LabGrid({ projects, profileUrl }: { projects: Project[]; profile
 
       <p className="mt-10 text-body">
         Everything else lives on{" "}
-        <a href={profileUrl} target="_blank" rel="noopener noreferrer" className="accent-link text-title">
+        <a href={profileUrl} target="_blank" rel="noopener noreferrer" className="accent-link tap-target text-title">
           github.com/{githubUser}
         </a>
         .
